@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                <h1 id="esp32-webserver-game-with-pushbuttons">ESP32 Webserver Game with pushbuttons</h1>
+<p>Setting up a simple <strong>snake game</strong> (in JavaScript) on <strong>ESP32 Webserver</strong> and controlling the movements via pushbuttons and bluetooth</p>
+            </div>
+
+            <div class="content">
+                
+<h2 id="concept-">Concept:</h2>
+<p>1) A snake-game is hosted on an ESP32 server as shown in the below code using <strong>Webserver</strong> library. 
+2) Javascript game code can be found <a href="https://github.com/yakkomajuri/brython-snake">here</a> (You can even create our own custom game if you are familiar with Javascript).
+3) An ESP32 circuit is build with 4 pushbuttons on it.
+4) These pushbuttons act as up-down-left-right arrow keys of a computer.
+5) <a href="https://github.com/T-vK/ESP32-BLE-Keyboard">BLE-Keyboard</a> library is used for connecting ESP32 with device&#39;s bluetooth. Subsequent control signals from pushbuttons are sent to the device via bluetooth.
+6) The assembly of the circuit and the game can be figured out from the schematic given below.</p>
+<p><img src="https://github.com/Sarthak-22/ESP32-game-using-pushbuttons/blob/main/snake_game.png?raw=true" alt="game"></p>
+<h2 id="prerequisites-">Prerequisites:</h2>
+<ul>
+<li>ESP32 in Arduino IDE</li>
+<li>Go through the <a href="https://github.com/T-vK/ESP32-BLE-Keyboard">BLE-Keyboard</a> library documentation to understand and how it works. Download the github repo as a zip file and add the zip file in Arduino IDE.</li>
+<li>The library should be visible in Arduino IDE before you start to program.</li>
+</ul>
+<h2 id="components-">Components:</h2>
+<ul>
+<li>ESP32 custom board</li>
+<li>4 pushbuttons</li>
+<li>Jumper wires</li>
+</ul>
+<h2 id="schematic-">Schematic:</h2>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Easy%20Projects/Images/ESP32game.jpg?raw=true" alt="image"></p>
+<h2 id="code-">Code:</h2>
+<pre><code>#include <span class="hljs-tag">&lt;<span class="hljs-name">BleKeyboard.h</span>&gt;</span>
+#include <span class="hljs-tag">&lt;<span class="hljs-name">WiFi.h</span>&gt;</span>
+#include <span class="hljs-tag">&lt;<span class="hljs-name">WebServer.h</span>&gt;</span>
+
+BleKeyboard bleKeyboard;
+
+
+WebServer server(80);
+
+const char* ssid = "      "; // Add the ssid of your network
+const char* password =  "       "; // Add the passowrd of your WiFi network.
+
+// You can copy paste the below HTML code. No need to code line-by-line.
+const char HTML[] PROGMEM = R"rawliteral(
+<span class="hljs-meta">&lt;!DOCTYPE HTML&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">"en"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"viewport"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"width=device-width, initial-scale=1.0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>JavaScript Snake<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"</span>
+        <span class="hljs-attr">integrity</span>=<span class="hljs-string">"sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"</span> <span class="hljs-attr">crossorigin</span>=<span class="hljs-string">"anonymous"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="css">
+        <span class="hljs-selector-tag">h1</span> {
+            <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">8%</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(83, 238, 36);
+        }
+        <span class="hljs-selector-tag">h3</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(190, 187, 187);
+        }
+        <span class="hljs-selector-tag">h6</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(117, 117, 117);
+        }
+        <span class="hljs-selector-tag">a</span> {
+            <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(117, 117, 117);
+        }
+        <span class="hljs-selector-tag">button</span> {
+            <span class="hljs-attribute">display</span>: block;
+            <span class="hljs-attribute">margin-left</span>: auto;
+            <span class="hljs-attribute">margin-right</span>: auto;
+            <span class="hljs-attribute">background-color</span>: transparent <span class="hljs-meta">!important</span>;
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-built_in">rgb</span>(155, 156, 155) <span class="hljs-meta">!important</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(155, 156, 155) <span class="hljs-meta">!important</span>;
+            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">8px</span> <span class="hljs-meta">!important</span>;
+            <span class="hljs-attribute">padding</span>: <span class="hljs-number">3px</span> <span class="hljs-meta">!important</span>;
+        }
+        <span class="hljs-selector-tag">button</span><span class="hljs-selector-pseudo">:hover</span> {
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-built_in">rgb</span>(68, 241, 68) <span class="hljs-meta">!important</span>;
+            <span class="hljs-attribute">color</span>: <span class="hljs-built_in">rgb</span>(194, 196, 194) <span class="hljs-meta">!important</span>;
+        }
+        <span class="hljs-selector-tag">body</span> {
+            <span class="hljs-attribute">background-color</span>: black;
+        }
+        <span class="hljs-selector-tag">canvas</span> {
+            <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">1%</span>;
+            <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">0</span>;
+            <span class="hljs-attribute">margin-left</span>: auto;
+            <span class="hljs-attribute">margin-right</span>: auto;
+            <span class="hljs-attribute">display</span>: block;
+            <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span>;
+            <span class="hljs-attribute">border-style</span>: solid;
+            <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#535353</span>;
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span>Snake built with JavaScript!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span>Not that impressive... Check out <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"brython-snake.html"</span>&gt;</span>snake built with Python - in browser!<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"game-board"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"score"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span>Score: 0<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h6</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"high-score"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span>High Score: 0<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"text-center"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"instructions-btn"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"btn btn-info"</span>&gt;</span>Instructions<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+        <span class="hljs-comment">/*
+         Original Code Credits: Chris DeLeon of HomeTeam GameDev 
+         Modified by: Yakko Majuri
+        */</span>
+<span class="hljs-meta">        'use strict'</span>
+        <span class="hljs-keyword">let</span> canvas, ctx;
+        <span class="hljs-built_in">window</span>.onload = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            canvas = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"game-board"</span>);
+            ctx = canvas.getContext(<span class="hljs-string">"2d"</span>);
+            <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"keydown"</span>, keyPush);
+            setInterval(game, <span class="hljs-number">1000</span> / <span class="hljs-number">10</span>);
+            <span class="hljs-keyword">let</span> instructionsBtn = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"instructions-btn"</span>);
+            instructionsBtn.addEventListener(<span class="hljs-string">"click"</span>, showInstructions)
+        }
+        <span class="hljs-keyword">let</span> score = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">let</span> highScore = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">let</span> px = <span class="hljs-number">10</span>;
+        <span class="hljs-keyword">let</span> py = <span class="hljs-number">10</span>;
+        <span class="hljs-keyword">let</span> gs = <span class="hljs-number">20</span>;
+        <span class="hljs-keyword">let</span> tc = <span class="hljs-number">20</span>;
+        <span class="hljs-keyword">let</span> ax = <span class="hljs-number">15</span>;
+        <span class="hljs-keyword">let</span> ay = <span class="hljs-number">15</span>;
+        <span class="hljs-keyword">let</span> xv = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">let</span> yv = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">let</span> trail = [];
+        <span class="hljs-keyword">let</span> tail = <span class="hljs-number">5</span>;
+        <span class="hljs-keyword">let</span> paused = <span class="hljs-literal">false</span>
+        <span class="hljs-keyword">let</span> pre_pause = [<span class="hljs-number">0</span>, <span class="hljs-number">0</span>]
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">game</span>(<span class="hljs-params"></span>) </span>{
+            px += xv;
+            py += yv;
+            <span class="hljs-keyword">if</span> (px &lt; <span class="hljs-number">0</span>) {
+                px = tc - <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">if</span> (px &gt; tc - <span class="hljs-number">1</span>) {
+                px = <span class="hljs-number">0</span>;
+            }
+            <span class="hljs-keyword">if</span> (py &lt; <span class="hljs-number">0</span>) {
+                py = tc - <span class="hljs-number">1</span>;
+            }
+            <span class="hljs-keyword">if</span> (py &gt; tc - <span class="hljs-number">1</span>) {
+                py = <span class="hljs-number">0</span>;
+            }
+            ctx.fillStyle = <span class="hljs-string">"black"</span>;
+            ctx.fillRect(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, canvas.width, canvas.height);
+            ctx.fillStyle = <span class="hljs-string">"lime"</span>;
+            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; trail.length; ++i) {
+                ctx.fillRect(trail[i].x * gs, trail[i].y * gs, gs - <span class="hljs-number">2</span>, gs - <span class="hljs-number">2</span>);
+                <span class="hljs-keyword">if</span> (trail[i].x == px &amp;&amp; trail[i].y == py) {
+                    tail = paused ? tail : <span class="hljs-number">5</span>;
+                    score = paused ? score : <span class="hljs-number">0</span>;
+                }
+            }
+            trail.push({ <span class="hljs-attr">x</span>: px, <span class="hljs-attr">y</span>: py });
+            <span class="hljs-keyword">while</span> (trail.length &gt; tail) {
+                trail.shift();
+            }
+            <span class="hljs-keyword">if</span> (ax == px &amp;&amp; ay == py) {
+                ++score;
+                ++tail;
+                ax = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * tc);
+                ay = <span class="hljs-built_in">Math</span>.floor(<span class="hljs-built_in">Math</span>.random() * tc);
+            }
+            ctx.fillStyle = <span class="hljs-string">"red"</span>;
+            ctx.fillRect(ax * gs, ay * gs, gs - <span class="hljs-number">2</span>, gs - <span class="hljs-number">2</span>);
+            updateScore(score)
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">updateScore</span>(<span class="hljs-params">newScore</span>) </span>{
+            <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"score"</span>).innerHTML = <span class="hljs-string">"Score: "</span> + <span class="hljs-built_in">String</span>(newScore);
+            <span class="hljs-keyword">if</span> (newScore &gt; highScore) {
+                <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">"high-score"</span>).innerHTML = <span class="hljs-string">"High Score: "</span> + <span class="hljs-built_in">String</span>(newScore);
+                highScore = newScore;
+            }
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">keyPush</span>(<span class="hljs-params">evt</span>) </span>{
+            <span class="hljs-keyword">if</span> (!paused) {
+                <span class="hljs-keyword">switch</span> (evt.keyCode) {
+                    <span class="hljs-keyword">case</span> <span class="hljs-number">37</span>:
+                        xv = <span class="hljs-number">-1</span>; yv = <span class="hljs-number">0</span>;
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-number">38</span>:
+                        xv = <span class="hljs-number">0</span>; yv = <span class="hljs-number">-1</span>;
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-number">39</span>:
+                        xv = <span class="hljs-number">1</span>; yv = <span class="hljs-number">0</span>;
+                        <span class="hljs-keyword">break</span>;
+                    <span class="hljs-keyword">case</span> <span class="hljs-number">40</span>:
+                        xv = <span class="hljs-number">0</span>; yv = <span class="hljs-number">1</span>;
+                        <span class="hljs-keyword">break</span>;
+                }
+            }
+            <span class="hljs-keyword">if</span> (evt.keyCode === <span class="hljs-number">32</span>) {
+                <span class="hljs-keyword">let</span> temp = [xv, yv];
+                xv = pre_pause[<span class="hljs-number">0</span>];
+                yv = pre_pause[<span class="hljs-number">1</span>];
+                pre_pause = [...temp];
+                paused = !paused;
+            }
+        }
+        <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">showInstructions</span>(<span class="hljs-params"></span>) </span>{
+            <span class="hljs-built_in">window</span>.alert(<span class="hljs-string">"Use the arrow keys to move and press spacebar to pause the game."</span>)
+        }
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+)rawliteral";
+
+int up = 19; // GPIO 19 for up pushbutton
+int down = 4; // GPIO 4 for down pushbutton
+int left = 5; // GPIO 5 for left pushbutton
+int right = 18;// GPIO 18 for right pushbutton.
+
+
+ void setup(){
+  Serial.begin(115200);
+  pinMode(up, INPUT_PULLUP);
+  pinMode(down, INPUT_PULLUP);
+  pinMode(left, INPUT_PULLUP);
+  pinMode(right, INPUT_PULLUP);
+
+  bleKeyboard.begin();
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(1000);
+    Serial.println("Connecting to WiFi..");
+  }
+
+  Serial.println(WiFi.localIP());
+
+
+  server.on("/html", []() {
+    server.send(200, "text/html", HTML);
+  });
+
+  server.begin();
+
+}
+
+void loop()
+{
+  server.handleClient();
+  if(digitalRead(up)==LOW)
+  {
+    bleKeyboard.press(KEY_UP_ARROW);
+  }
+
+  if(digitalRead(down)==LOW)
+  {
+    bleKeyboard.press(KEY_DOWN_ARROW);
+  }
+
+  if(digitalRead(left)==LOW)
+  {
+    bleKeyboard.press(KEY_LEFT_ARROW);
+  }
+
+  if(digitalRead(right)==LOW)
+  {
+    bleKeyboard.press(KEY_RIGHT_ARROW);
+  }
+
+
+  delay(100);
+  bleKeyboard.releaseAll();
+}
+</code></pre><h2 id="debugging-">Debugging:</h2>
+<ul>
+<li>It is recommended to go through and understand the <a href="https://github.com/T-vK/ESP32-BLE-Keyboard">BLE-Keyboard</a> library first before starting to program.</li>
+<li>Check whether the bluetooth connection is established between ESP32 board and your laptop (<strong>Do not open the webserver on mobile phone</strong>)</li>
+<li>Check for short connections in your circuit.</li>
+</ul>
+<h2 id="extra-problem-statement-">Extra Problem Statement:</h2>
+<ul>
+<li>The above code seems to long in size.  Use SPIFFS plugin in Arduino IDE (Discussed in MPU-6050 Club Session) and figure out how you can use and save the Javascript game in SPIFFS <code>data</code> folder.</li>
+<li>Set up the popular <strong>Flappy Bird game</strong> in <strong>OLED</strong> display and control the game using just one pushbutton in your ESP32 circuit. (PS - You can refer online resources for readily available Flappy Bird game code).</li>
+</ul>
+
+          
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

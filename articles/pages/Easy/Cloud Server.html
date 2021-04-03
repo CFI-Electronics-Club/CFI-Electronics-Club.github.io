@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="cloud-server">Cloud Server</h1>
+                <p>In this simple mini project, we are going to pull down data from the board and store it in a cloud server.</p>
+            </div>
+
+            <div class="content">
+
+                <h2 id="concept">Concept</h2>
+                <p>The concept is really simple. The temperature and hall effect sensor values are obtained and stored in a cloud storage and the data is plotted. </p>
+                <h2 id="components-required">Components required</h2>
+                <ul>
+                <li>Electronics club custom development board </li>
+                <li>Jumper wires<h2 id="libraries-required">Libraries required</h2>
+                </li>
+                <li>WiFi.h</li>
+                <li>ThingSpeak.h</li>
+                <li>secrets.h</li>
+                </ul>
+                <p>WiFi.h is a standard Arduino library header file. However, ThingSpeak.h is different and it needs to be installed first. Follow the steps given below:</p>
+                <ol>
+                <li>Open you Arduino IDE and choose Sketch/Include Library/Manage Libraries. Click the ThingSpeak Library (by MathWorks) from the list, and click the Install button.</li>
+                <li>Create a .ino file which you are going to use for this code. The sketch folder will be automatically generated and the .ino file will be present in it.</li>
+                <li>Create secrets.h and store it in the sketch folder. Also, write the following code into it:</li>
+                </ol>
+                <pre><code>// <span class="hljs-keyword">Use</span> this <span class="hljs-keyword">file</span> <span class="hljs-keyword">to</span> <span class="hljs-keyword">store</span> all <span class="hljs-keyword">of</span> the <span class="hljs-keyword">private</span> credentials 
+                // <span class="hljs-keyword">and</span> <span class="hljs-keyword">connection</span> details
+                
+                #<span class="hljs-keyword">define</span> SECRET_SSID <span class="hljs-string">"Temp"</span>        // <span class="hljs-keyword">replace</span> Temp <span class="hljs-keyword">with</span> your WiFi network <span class="hljs-keyword">name</span>
+                #<span class="hljs-keyword">define</span> SECRET_PASS <span class="hljs-string">"Temp"</span>    // <span class="hljs-keyword">replace</span> Temp <span class="hljs-keyword">with</span> your WiFi <span class="hljs-keyword">password</span>
+                
+                #<span class="hljs-keyword">define</span> SECRET_CH_ID Temp            // <span class="hljs-keyword">replace</span> Temp <span class="hljs-keyword">with</span> your channel <span class="hljs-built_in">number</span>
+                #<span class="hljs-keyword">define</span> SECRET_WRITE_APIKEY <span class="hljs-string">"Temp"</span>   // <span class="hljs-keyword">replace</span> Temp <span class="hljs-keyword">with</span> your channel write API <span class="hljs-keyword">Key</span>
+                </code></pre><h2 id="schematic">Schematic</h2>
+                <p>There are no external connections required. Just connecting the Dev board to the laptop using the USB cable is enough. However, following connections should be made if you also want to obtain the MPU6050 IMU values:</p>
+                <ul>
+                <li>SDA of custom board &lt;-&gt; Pin 21 of custom board</li>
+                <li>SCL of custom board &lt;-&gt; Pin 22 of custom board
+                <img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Easy%20Projects/Images/cloud.jpg?raw=true" alt="temp"><h2 id="code">Code</h2>
+                <h3 id="libraries-are-included">Libraries are included</h3>
+                </li>
+                </ul>
+                <pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> __cplusplus</span>
+                <span class="hljs-keyword">extern</span> <span class="hljs-string">"C"</span> {
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+                <span class="hljs-keyword">uint8_t</span> temprature_sens_read();
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> __cplusplus</span>
+                }
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+                <span class="hljs-keyword">uint8_t</span> temprature_sens_read();
+                
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFi.h&gt;</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"secrets.h"</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"ThingSpeak.h"</span> <span class="hljs-comment">// always include thingspeak header file after other header files and custom macros</span></span>
+                </code></pre><h3 id="network-details-are-accessed">Network details are accessed</h3>
+                <pre><code><span class="hljs-keyword">char</span> ssid[] = SECRET_SSID;   
+                <span class="hljs-keyword">char</span> pass[] = SECRET_PASS;   
+                <span class="hljs-built_in">WiFiClient</span>  client;
+                
+                <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> myChannelNumber = SECRET_CH_ID;
+                <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * myWriteAPIKey = SECRET_WRITE_APIKEY;
+                </code></pre><h3 id="useful-variables-are-declared">Useful variables are declared</h3>
+                <pre><code class="lang-ino">int h = hallRead()<span class="hljs-comment">;</span>
+                float <span class="hljs-literal">t</span> = ((<span class="hljs-name">temprature_sens_read</span>()<span class="hljs-number">-32</span>)/1.<span class="hljs-number">8</span>)<span class="hljs-comment">;                //changing temperature parameter to celsius</span>
+                String myStatus = <span class="hljs-string">""</span><span class="hljs-comment">;</span>
+                </code></pre>
+                <h3 id="network-connection-is-set-up">Network connection is set up</h3>
+                <pre><code><span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);  <span class="hljs-comment">//Initialize serial</span>
+                  <span class="hljs-built_in">while</span> (!<span class="hljs-built_in">Serial</span>) {
+                    ; <span class="hljs-comment">// wait for serial port to connect. Needed for Leonardo native USB port only</span>
+                  }
+                
+                  <span class="hljs-built_in">WiFi</span>.mode(WIFI_STA);   
+                  ThingSpeak.<span class="hljs-built_in">begin</span>(client);  <span class="hljs-comment">// Initialize ThingSpeak</span>
+                }
+                </code></pre><h3 id="values-are-sent-to-cloud-and-updated">Values are sent to cloud and updated</h3>
+                <pre><code><span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+                
+                  <span class="hljs-comment">// Connect or reconnect to WiFi</span>
+                  <span class="hljs-built_in">if</span>(<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED){
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Attempting to connect to SSID: "</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(SECRET_SSID);
+                    <span class="hljs-built_in">while</span>(<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED){
+                      <span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">begin</span>(ssid, pass);  <span class="hljs-comment">// Connect to WPA/WPA2 network. Change this line if using open or WEP network</span>
+                      <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"."</span>);
+                      <span class="hljs-built_in">delay</span>(<span class="hljs-number">5000</span>);     
+                    } 
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"\nConnected."</span>);
+                  }
+                
+                  <span class="hljs-comment">// set the fields with the values</span>
+                  ThingSpeak.setField(<span class="hljs-number">1</span>, h);
+                  ThingSpeak.setField(<span class="hljs-number">2</span>, t);              <span class="hljs-comment">//Field values are stored</span>
+                
+                
+                  <span class="hljs-comment">//set the status</span>
+                  myStatus = <span class="hljs-keyword">String</span>(<span class="hljs-string">"Values are updated"</span>);
+                  ThingSpeak.setStatus(myStatus);              <span class="hljs-comment">//Status is written</span>
+                
+                  <span class="hljs-comment">// write to the ThingSpeak channel</span>
+                  <span class="hljs-keyword">int</span> x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);            <span class="hljs-comment">//Values are sent to cloud server</span>
+                  <span class="hljs-built_in">if</span>(x == <span class="hljs-number">200</span>){
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Channel update successful."</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-keyword">String</span>(<span class="hljs-string">"Hall: "</span>)+h+<span class="hljs-keyword">String</span>(<span class="hljs-string">" Temperature: "</span>)+t);
+                  }
+                  <span class="hljs-built_in">else</span>{
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Problem updating channel. HTTP error code "</span> + <span class="hljs-keyword">String</span>(x));
+                  }
+                
+                   h = hallRead();
+                   t = ((temprature_sens_read()<span class="hljs-number">-32</span>)/<span class="hljs-number">1.8</span>);                           <span class="hljs-comment">//Input values are read at next time instant</span>
+                  <span class="hljs-built_in">delay</span>(<span class="hljs-number">20000</span>); <span class="hljs-comment">// Wait 20 seconds to update the channel again</span>
+                }
+                </code></pre><h2 id="full-code">Full code</h2>
+                <pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> __cplusplus</span>
+                <span class="hljs-keyword">extern</span> <span class="hljs-string">"C"</span> {
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+                uint8_t temprature_sens_read();
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">ifdef</span> __cplusplus</span>
+                }
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+                uint8_t temprature_sens_read();
+                
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFi.h&gt;</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"secrets.h"</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"ThingSpeak.h"</span> <span class="hljs-comment">// always include thingspeak header file after other header files and custom macros</span></span>
+                
+                <span class="hljs-keyword">char</span> ssid[] = SECRET_SSID;   
+                <span class="hljs-keyword">char</span> pass[] = SECRET_PASS;   
+                <span class="hljs-built_in">WiFiClient</span>  client;
+                
+                <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> myChannelNumber = SECRET_CH_ID;
+                <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> * myWriteAPIKey = SECRET_WRITE_APIKEY;
+                
+                <span class="hljs-keyword">int</span> h = hallRead();
+                <span class="hljs-keyword">float</span> t = ((temprature_sens_read()<span class="hljs-number">-32</span>)/<span class="hljs-number">1.8</span>);                <span class="hljs-comment">//changing temperature parameter to celsius</span>
+                <span class="hljs-keyword">String</span> myStatus = <span class="hljs-string">""</span>;
+                
+                <span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);  <span class="hljs-comment">//Initialize serial</span>
+                  <span class="hljs-built_in">while</span> (!<span class="hljs-built_in">Serial</span>) {
+                    ; <span class="hljs-comment">// wait for serial port to connect. Needed for Leonardo native USB port only</span>
+                  }
+                
+                  <span class="hljs-built_in">WiFi</span>.mode(WIFI_STA);   
+                  ThingSpeak.<span class="hljs-built_in">begin</span>(client);  <span class="hljs-comment">// Initialize ThingSpeak</span>
+                }
+                
+                <span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+                
+                  <span class="hljs-comment">// Connect or reconnect to WiFi</span>
+                  <span class="hljs-built_in">if</span>(<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED){
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Attempting to connect to SSID: "</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(SECRET_SSID);
+                    <span class="hljs-built_in">while</span>(<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED){
+                      <span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">begin</span>(ssid, pass);  <span class="hljs-comment">// Connect to WPA/WPA2 network. Change this line if using open or WEP network</span>
+                      <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"."</span>);
+                      <span class="hljs-built_in">delay</span>(<span class="hljs-number">5000</span>);     
+                    } 
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"\nConnected."</span>);
+                  }
+                
+                  <span class="hljs-comment">// set the fields with the values</span>
+                  ThingSpeak.setField(<span class="hljs-number">1</span>, h);
+                  ThingSpeak.setField(<span class="hljs-number">2</span>, t);              <span class="hljs-comment">//Field values are stored</span>
+                
+                
+                  <span class="hljs-comment">//set the status</span>
+                  myStatus = <span class="hljs-keyword">String</span>(<span class="hljs-string">"Values are updated"</span>);
+                  ThingSpeak.setStatus(myStatus);              <span class="hljs-comment">//Status is written</span>
+                
+                  <span class="hljs-comment">// write to the ThingSpeak channel</span>
+                  <span class="hljs-keyword">int</span> x = ThingSpeak.writeFields(myChannelNumber, myWriteAPIKey);            <span class="hljs-comment">//Values are sent to cloud server</span>
+                  <span class="hljs-built_in">if</span>(x == <span class="hljs-number">200</span>){
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Channel update successful."</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-keyword">String</span>(<span class="hljs-string">"Hall: "</span>)+h+<span class="hljs-keyword">String</span>(<span class="hljs-string">" Temperature: "</span>)+t);
+                  }
+                  <span class="hljs-built_in">else</span>{
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Problem updating channel. HTTP error code "</span> + <span class="hljs-keyword">String</span>(x));
+                  }
+                
+                   h = hallRead();
+                   t = ((temprature_sens_read()<span class="hljs-number">-32</span>)/<span class="hljs-number">1.8</span>);                           <span class="hljs-comment">//Input values are read at next time instant</span>
+                  <span class="hljs-built_in">delay</span>(<span class="hljs-number">20000</span>); <span class="hljs-comment">// Wait 20 seconds to update the channel again</span>
+                }
+                </code></pre><h2 id="follow-up-problem-statement">Follow up Problem Statement</h2>
+                <p>As a follow up problem statement, try controlling certain outputs based on the data you obtain. For example, if the temperature graph you plot is having standard deviation below a certain threshold, you should switch on an LED. Else, no need of the LED. You can think of your own problem statements and try using the cloud server to your advantage. Make the required changes to the code so that you can also obtain the IMU sensor values. Try using the Adafruit_MPU6050 library to obtain the filtered data (Taught in the IMU web server session).  </p>
+                <h2 id="references">References</h2>
+                <ol>
+                <li><a href="https://iotdesignpro.com/projects/how-to-send-data-to-thingspeak-cloud-using-esp32">Tutorial: Data to cloud from ESP32</a></li>
+                <li><a href="https://github.com/mathworks/thingspeak-arduino/blob/master/examples/ESP32/WriteMultipleFields/WriteMultipleFields.ino">ThingSpeak library documentation example</a></li>
+                </ol>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

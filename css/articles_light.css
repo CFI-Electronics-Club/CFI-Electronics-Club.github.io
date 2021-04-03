@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+body {
+  background-color: floralwhite !important;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  /* line-height: 1.5 !important; */
+  font-family: "Montserrat", sans-serif !important;
+  color: black;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  body > #content {
+    padding: 0px 20px 20px 20px !important;
+  }
+}
+.navbar {
+  padding: 0.1rem 0.7rem !important;
+}
+.navbar-brand {
+  color: #ec4646 !important; /* Darker */
+  font-weight: bolder;
+  font-size: 20px;
+}
+.nav-link {
+  color: white !important;
+}
+
+body > #content {
+  margin: 0px;
+  max-width: 900px;
+  border: 1px solid #e1e4e8;
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  color: white !important;
+  background-color: #bbb;
+  height: 1px;
+  flex: 0 1 auto;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:visited {
+  color: #0366d6;
+}
+a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+  color: black;
+
+}
+
+/**
+  * Code blocks
+  */
+
+code {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  word-wrap: break-word;
+  padding: 0.2em 0.4em;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+}
+
+pre > code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+  font-size: 100%;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  border-left-width: 3px;
+  padding: 0 1em;
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote * {
+  font-style: normal !important;
+  letter-spacing: 0;
+  color: #6a737d !important;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-spacing: 2px;
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+th {
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+/**
+ * Others
+ */
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: black !important;
+  font-family: Montserrat, "sans-serif" !important;
+  margin: 30px auto !important;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  color: black;
+
+  font-size: 16px;
+  line-height: 1.5;
+}
+table {
+  font-family: Montserrat, "sans-serif" !important;
+}
+
+a:visited {
+  color: #0366d6;
+}
+
+h1 {
+  color: black !important; /* Darker */
+  margin-top: 45px !important;
+  margin-bottom: 30px !important;
+  font-size: larger;
+  font-family: "Archivo Black", sans-serif !important;
+}
+h2,
+h3 {
+  margin-top: 45px !important;
+  color: maroon !important;
+  margin-bottom: 30px !important;
+  font-family: "Archivo Black", sans-serif !important;
+  font-weight: 500;
+}
+strong {
+  color: black !important; /* Darker */
+  font-family: "Archivo Black", sans-serif !important;
+}
+
+.cfi {
+  border-radius: 0px;
+  background: #4a4a4a;
+  box-shadow: 11px 11px 22px #212121, -11px -11px 22px #737373;
+}
+#menu .pure-menu-selected {
+  background: floralwhite;
+  color: black;
+}
+#menu .pure-menu-selected a {
+  color: black;
+}

@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="joystick-interfacing">Joystick interfacing</h1>
+<p>In this project, we are going to interface HW-504 analog controller module to the laptop and use it in place of the good old WASD gaming controls.</p>
+            </div>
+
+            <div class="content">
+<h2 id="concept">Concept</h2>
+<p>Concepts involve the working of the joystick module and the pushbutton trigger. Apart from that, it is just coding and using a special library to do the job.</p>
+<h2 id="components-required">Components required</h2>
+<ul>
+<li>Electronics club custom development board</li>
+<li>HW-504 joystick module </li>
+<li>Jumper wires</li>
+</ul>
+<h2 id="libraries-required">Libraries required</h2>
+<ul>
+<li>BleKeyboard.h</li>
+</ul>
+<p>BleKeyboard.h is the header file which is used to provide keystrokes to the laptop via bluetooth. However, this library is not directly installable through the library mananger. Instead the .zip file must be downloaded and then must be manually added. Follow this procedure:</p>
+<ol>
+<li>Download the latest release of ESP32-BLE-Keyboard.zip from this github link: <a href="https://github.com/T-vK/ESP32-BLE-Keyboard/releases">T-vK/ESP32-BLE-Keyboard</a>.</li>
+<li>Open you Arduino IDE and choose Sketch/Include Library/Add .ZIP Library and select the .zip file you downloaded.</li>
+</ol>
+<p>The library is now installed and can be used.</p>
+<h2 id="schematic">Schematic</h2>
+<p>Make the following connections:</p>
+<ul>
+<li>GND of HW-504 &lt;-&gt; GND of Dev board</li>
+<li>+5V of HW-504 &lt;-&gt; Vcc(3.3V) of Dev board</li>
+<li>VRx of HW-504 &lt;-&gt; Pin 32 of Dev board</li>
+<li>VRy of HW-504 &lt;-&gt; Pin 34 of Dev board</li>
+<li>SW of HW-504 &lt;-&gt; Pin 35 of Dev board</li>
+</ul>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Moderate%20or%20Difficult%20Projects/Images/joystick.jpg?raw=true" alt="temp"></p>
+<p><strong>Important note:</strong> The ADC2 pins won&#39;t work together with the BLE library. So they can&#39;t be used as the reading pins for VRx, VRy and SW. Instead use ADC1 pins (I used pins 32, 34 and 35 which are ADC1 pins).</p>
+<h2 id="working-of-the-joystick">Working of the joystick</h2>
+<p>The analog joystick basically works based on the <strong>Gimbal</strong> mechanism. Beneath the stick, there is a rod which is placed on two U-shaped arch like structures. These U-shaped structures are actually 10K potentiometers and when the stick is moved, the rod also moves which generates an electric signal. This signal value depends on the degree to which the stick is moved. The following images will give an idea: </p>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Moderate%20or%20Difficult%20Projects/Images/Gimbal.gif?raw=true" alt="temp"></p>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Moderate%20or%20Difficult%20Projects/Images/XYvalues.jpg?raw=true" alt="temp"></p>
+<p>The values given in the second image need not be the same for everyone. For example, in my case, the values range from 0 to 4095 because the Dev board has its ADC bit resolution as 12 bits. Also, the X-value became zero when the analog stick was moved left and Y-value became zero when the stick was moved up. Basically the values given in the image are flipped with respect to the X=Y line in my case and 1024 is scaled upto 4096. So, one hint is when you do this project on your own, first check what the X, Y values are by reading the VRx, VRy values and printing them on the serial monitor. Once, you get to know which position correspond to which range of values, you can accordingly code to provide the correct strokes. Also, decide the X, Y axes before writing the code (I took the X-axis as the horizontal axis and Y-axis as the vertical aixs with respect to the second image) </p>
+<h2 id="code-">Code:</h2>
+<pre><code class="lang-ino"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;BleKeyboard.h&gt;</span></span>
+
+BleKeyboard Key(<span class="hljs-string">"Temp"</span>);  
+<span class="hljs-comment">/*
+Replace Temp with the name you want to provide for the bluetooth of the board. 
+That name will appear in the devices list when you switch on the
+laptop's bluetooth. Also, the board must be paired for sending the keystrokes.
+*/</span>
+
+<span class="hljs-keyword">boolean</span> state = !false;                  
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>);
+  Key.<span class="hljs-built_in">begin</span>();
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+
+  <span class="hljs-keyword">int</span> x = <span class="hljs-built_in">analogRead</span>(<span class="hljs-number">32</span>);
+  <span class="hljs-keyword">int</span> y = <span class="hljs-built_in">analogRead</span>(<span class="hljs-number">34</span>);
+  <span class="hljs-comment">/*
+  int trig = analogRead(35);
+
+  if(trig==0){
+    state = (!state);
+  }
+  */</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(x);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(y);
+  <span class="hljs-comment">//Serial.println(trig);</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(state);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"------------------------"</span>);
+
+  <span class="hljs-built_in">if</span>(Key.isConnected()){
+    <span class="hljs-built_in">if</span>(state==true){
+      <span class="hljs-built_in">if</span>(x&gt;=<span class="hljs-number">1024</span> &amp;&amp; x&lt;=<span class="hljs-number">3072</span> &amp;&amp; y==<span class="hljs-number">0</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'W'</span>);
+      }
+      <span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(y&gt;=<span class="hljs-number">1024</span> &amp;&amp; y&lt;=<span class="hljs-number">3072</span> &amp;&amp; x==<span class="hljs-number">0</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'A'</span>);
+      }
+      <span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(x&gt;=<span class="hljs-number">1024</span> &amp;&amp; x&lt;=<span class="hljs-number">3072</span> &amp;&amp; y==<span class="hljs-number">4095</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'S'</span>);
+      }
+      <span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(y&gt;=<span class="hljs-number">1024</span> &amp;&amp; y&lt;=<span class="hljs-number">3072</span> &amp;&amp; x==<span class="hljs-number">4095</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'D'</span>);
+      }
+      <span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(x&lt;<span class="hljs-number">1024</span> &amp;&amp; y&lt;<span class="hljs-number">1024</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'W'</span>);
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'A'</span>);
+      }
+      <span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(x&lt;<span class="hljs-number">1024</span> &amp;&amp; y&gt;<span class="hljs-number">3072</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'S'</span>);
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'A'</span>);
+      }
+      <span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(x&gt;<span class="hljs-number">3072</span> &amp;&amp; y&gt;<span class="hljs-number">3072</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'S'</span>);
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'D'</span>);
+      }
+      <span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(x&gt;<span class="hljs-number">3072</span> &amp;&amp; y&lt;<span class="hljs-number">1024</span>){
+        Key.<span class="hljs-built_in">releaseAll</span>();
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'W'</span>);
+        Key.<span class="hljs-built_in">press</span>(<span class="hljs-string">'D'</span>);
+      }
+      <span class="hljs-built_in">else</span>{
+        Key.<span class="hljs-built_in">releaseAll</span>();
+      }
+    }
+  }
+  <span class="hljs-built_in">else</span>{
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Bluetooth not connected"</span>);
+  }
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1</span>);
+}
+</code></pre>
+<p><strong>Important note:</strong> Connecting the circuit to laptop is not a necessity since we are sending the strokes via bluetooth. Only at the initial stage, we must connect the board to the laptop to upload the code. Later we can remove this connection and can power the board via a normal power adapter. Also, upload the code while there are no external connections. Once that is done, make the external connections.</p>
+<p><strong>Possible changes:</strong>
+The code provides keystrokes to the computer. Hence, if not controlled properly, the code may provide random keystrokes and can create a mess. So ensure that a control signal (Say a pushbutton) is used to enable and disable the code.</p>
+<ol>
+<li><p>I used the in-built pushbutton of the HW-504 as the control signal. </p>
+<pre><code class="lang-ino">/*
+int trig = analogRead(<span class="hljs-number">35</span>);
+
+if(trig==<span class="hljs-number">0</span>){
+ <span class="hljs-keyword">state</span> = (!<span class="hljs-keyword">state</span>);
+}
+*/
+</code></pre>
+<p>This commented code snippet pertains to it. Uncomment this snippet in the main code to use the inbuilt pushbutton as the control signal. Also, initialise the variable state with boolean value &quot;<strong>false</strong>&quot; (Remove the ! symbol in the line that declares the variable &#39;State&#39;)</p>
+</li>
+<li><p>Sometimes, the inbuilt pushbutton may behave weirdly because of the associated X,Y movements. Hence, it&#39;s better to use an external pushbutton as the control signal. The only change you&#39;ll need to make to the schematic is to remove the <strong>SW &lt;-&gt; Pin 35</strong> connection and provide the external pushbutton input to pin 35. The schematic is given below:</p>
+</li>
+</ol>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Moderate%20or%20Difficult%20Projects/Images/joystick2.jpg?raw=true" alt="temp"></p>
+<p>(The control signal is pulled up so that it will be a non-zero signal by default and will become 0 only when the button is pushed)</p>
+<p>3  . For smooth functioning of the joystick, we need to keep the sampling time as small as possible. That&#39;s why I provided a delay of 1 ms. However, having such a small delay means the system will sample the inputs 1000 times per second and hence, the pushbutton control signal may not work properly. Let&#39;s say the button is pressed for 0.52 seconds. Hence, the control signal will be zero for 520 ms meaning the system will sample that many 0 value for pin 35. Since this value is even, the final value of the &quot;State&quot; variable will still remain false. Essentially, the pushbutton didn&#39;t serve it&#39;s purpose. Hence, it&#39;s better to use a two-contact switch here and using it as a control signal instead.</p>
+<h2 id="follow-up-problem-statement">Follow up Problem statement</h2>
+<p>As a follow up problem statement, learn how you can send the keystrokes through the USB instead of bluetooth using the BLE library. Note that for this to be done, the circuit must be powered using your laptop. Also, learn how you can do the same using IMU instead of the joystick module. The values obtained from IMU maybe noisy and hence, the WASD control may not be exactly matched but still it&#39;s a good learning outcome.</p>
+<h2 id="references">References</h2>
+<ol>
+<li><a href="https://lastminuteengineers.com/joystick-interfacing-arduino-processing/#:~:text=The%20goal%20of%20the%20joystick,in%20a%20control%20stick%20form.">How a 2-axis joystick works</a></li>
+<li><a href="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Easy%20Projects/ESP32_Bluetooth_Keyboard.md">ESP32_BLE_Keyboard by Kanishkan</a></li>
+<li><a href="https://www.youtube.com/watch?v=gudmACeUyVc">ESP32 Tutorial: Joystick</a></li>
+</ol>
+<p>Demonstration video:</p>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Moderate%20or%20Difficult%20Projects/Images/JoystickVideo.gif?raw=true" alt="temp"></p>
+
+          
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

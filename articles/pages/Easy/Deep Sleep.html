@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="esp32-deep-sleep-tutorial">ESP32 deep sleep tutorial</h1>
+<p>We&#39;ll see how we can put the custom board in deep sleep mode to conserve power and make projects battery friendly.       </p>
+            </div>
+
+            <div class="content">
+
+<h2 id="concept">Concept</h2>
+<p>Inside the chip, we can find the two processing cores, the RAM and ROM memory, the WiFi module, the Bluetooth Module, a hardware acceleration module for cryptographic applications, the RTC module, and a lot of peripherals. Inside the RTC module, we can find a PMU (Phasor measurement unit) a small and very low power 32-bit co-processor, and 8Kbs of RAM memory. This small amount of memory is very useful as you are going to find out in a moment. </p>
+<p><img src="https://content.instructables.com/ORIG/FHZ/LVVU/JG74UWE7/FHZLVVUJG74UWE7.jpg?auto=webp&amp;frame=1&amp;width=1024&amp;height=1024&amp;fit=bounds&amp;md=df551b0e8ae4bc735b4e26d1fd4cfa83" alt=""></p>
+<p>The WiFi modules, the Processing Cores, and the Bluetooth module require a lot of current to operate. So, if we want to conserve power we have to disable them when don’t use them. We put the ESP32 to deep sleep mode, where it disables everything except the RTC module. There is a light sleep mode and the Deep sleep mode. In Deep Sleep mode the chip offers the lowest power consumption. It just needs 0.01 mAs of current in Deep Sleep mode and that’s the purpose of the tutorial.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Arduino IDE</p>
+<h2 id="components">Components</h2>
+<ul>
+<li>Electronics Club Custom Development Board (CDB)          </li>
+<li>LED</li>
+<li>Resistor - 10k</li>
+<li>Jumpers</li>
+<li>Breadboard   </li>
+<li>Multimeter
+</li>
+</ul>
+<h2 id="schematic">Schematic</h2>
+
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Easy%20Projects/Images/deep_sleep.jpg?raw=true" alt="image"></p>
+<h2 id="code">Code</h2>
+<pre><code class="lang-c"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> uS_TO_S_FACTOR 1000000  <span class="hljs-comment">/* Conversion factor for micro seconds to seconds */</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> TIME_TO_SLEEP  3        <span class="hljs-comment">/* Time the board will go to sleep (in seconds) */</span></span>
+
+RTC_DATA_ATTR <span class="hljs-keyword">int</span> bootCount = <span class="hljs-number">0</span>;
+
+<span class="hljs-keyword">int</span> LED_PIN_1 = <span class="hljs-number">25</span>;
+<span class="hljs-keyword">int</span> LED_PIN_2 = <span class="hljs-number">26</span>;
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>(){
+
+  <span class="hljs-built_in">pinMode</span>(LED_PIN_1,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(LED_PIN_2,<span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">500</span>);
+
+  <span class="hljs-built_in">if</span>(bootCount == <span class="hljs-number">0</span>) <span class="hljs-comment">//Run this only the first time</span>
+  {
+      <span class="hljs-built_in">digitalWrite</span>(LED_PIN_2,<span class="hljs-literal">HIGH</span>);
+      bootCount = bootCount+<span class="hljs-number">1</span>;
+  }<span class="hljs-built_in">else</span>
+  {
+      <span class="hljs-built_in">digitalWrite</span>(LED_PIN_1,<span class="hljs-literal">HIGH</span>);
+  }
+
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">3000</span>);
+
+  <span class="hljs-built_in">digitalWrite</span>(LED_PIN_1,<span class="hljs-literal">LOW</span>);
+  <span class="hljs-built_in">digitalWrite</span>(LED_PIN_2,<span class="hljs-literal">LOW</span>);
+
+  esp_sleep_enable_timer_wakeup(TIME_TO_SLEEP * uS_TO_S_FACTOR);
+  esp_deep_sleep_start();
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>(){
+
+}
+</code></pre>
+<p>When we use the deep-sleep function, each time the ESP32 wakes up, it executes the setup function again. The loop function is never called. All the variable values are lost, except if we save them in the RTC memory using this prefix.</p>
+<h2 id="follow-up-problem-statement">Follow-up Problem Statement</h2>
+<p>Measure the current that the board takes when it is used in active mode and deep sleep mode using a multimeter. Also, we see that after a random number of wakes up, the board goes to sleep and it won&#39;t wake up again. How do we solve this bug?</p>
+<h2 id="references">References</h2>
+<p><a href="https://www.instructables.com/ESP32-Deep-Sleep-Tutorial/">ESP32 deep sleep tutorial</a></p>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

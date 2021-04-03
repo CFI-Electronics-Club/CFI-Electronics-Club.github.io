@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+
+                <h1 id="controlling-gpios-using-telegram">Controlling GPIOs using Telegram</h1>
+<p>This project demonstrates how to control outputs of GPIOs using Telegram. As an example, we will control the internal RGB LED in the Custom Development Board using Telegram messages</p>
+            </div>
+
+            <div class="content">
+<h2 id="difficulty-level-moderate">Difficulty Level: Moderate</h2>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Telegram App on your Device           </li>
+<li>Arduino IDE</li>
+<li>Download the <a href="https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot/archive/master.zip">Universal Telegram Bot Library</a> and add this into your Arduino IDE    </li>
+</ul>
+<h4 id="note-don-t-install-the-library-through-the-arduino-library-manager-because-it-might-install-a-deprecated-version">Note: Don’t install the library through the Arduino Library Manager because it might install a deprecated version</h4>
+<ul>
+<li>Install the <strong>ArduinoJson</strong> library from the Library Manager in Arduino IDE </li>
+</ul>
+<h3 id="creating-a-telegram-bot-">Creating a Telegram Bot:</h3>
+<ul>
+<li>Open the Telegram App and Search for <strong>BotFather</strong> and Open it (or) open this <a href="https://t.me/botfather">link</a> on your device         </li>
+<li>Click the START button and Type <strong>/newbot</strong> and send to create your bot       </li>
+<li>Give it a name and Username         </li>
+<li>You will receive a message with a link to access the bot and the bot token. <strong>Save the bot token</strong>. You’ll need this for the Custom Dev Board (CDB) to interact with the bot     <h4 id="important-anyone-that-knows-your-bot-username-can-interact-with-it-to-make-sure-that-we-ignore-messages-that-are-not-from-our-telegram-account-or-any-authorized-users-you-can-get-your-telegram-user-id-then-when-your-telegram-bot-receives-a-message-cdb-can-check-whether-the-sender-id-corresponds-to-your-user-id-and-handle-the-message-or-ignore-it">Important: Anyone that knows your bot username can interact with it. To make sure that we ignore messages that are not from our Telegram account (or any authorized users), you can get your Telegram User ID. Then, when your telegram bot receives a message, CDB can check whether the sender ID corresponds to your User ID and handle the message or ignore it</h4>
+</li>
+<li>To do this, Search for <strong>IDBot</strong> and Open it (or) open this <a href="https://t.me/myidbot">link</a> on your device          </li>
+<li>Click START and type <strong>/getid</strong>. You will then get your User ID. Save it.</li>
+</ul>
+<h2 id="components">Components</h2>
+<ul>
+<li>Electronics Club Custom Development Board CDB</li>
+</ul>
+<h2 id="schematic">Schematic</h2>
+<p>R of CDB --&gt; Any GPIO (12 in Code)<br>G of CDB --&gt; Any GPIO (14 in Code)<br>B of CDB --&gt; Any GPIO (27 in Code)<br><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/raw/main/Moderate%20or%20Difficult%20Projects/Images/Telegram_RGB.png?raw=true" alt=""></p>
+<h2 id="code">Code</h2>
+<pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFi.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFiClientSecure.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;UniversalTelegramBot.h&gt;</span>   <span class="hljs-comment">// Universal Telegram Bot Library written by Brian Lough: https://github.com/witnessmenow/Universal-Arduino-Telegram-Bot</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;ArduinoJson.h&gt;</span></span>
+
+<span class="hljs-comment">// Replace with your network credentials</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* ssid = <span class="hljs-string">"REPLACE_WITH_YOUR_SSID"</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* password = <span class="hljs-string">"REPLACE_WITH_YOUR_PASSWORD"</span>;
+
+<span class="hljs-comment">// Initialize Telegram BOT</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> BOTtoken <span class="hljs-meta-string">"XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span>  <span class="hljs-comment">// your Bot Token (Get from Botfather)</span></span>
+
+<span class="hljs-comment">// Use @myidbot to find out the chat ID of an individual or a group</span>
+<span class="hljs-comment">// Also note that you need to click "start" on a bot before it can</span>
+<span class="hljs-comment">// message you</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> CHAT_ID <span class="hljs-meta-string">"XXXXXXXXXX"</span></span>
+
+WiFiClientSecure client;
+UniversalTelegramBot bot(BOTtoken, client);
+
+<span class="hljs-comment">// Checks for new messages every 1 second.</span>
+<span class="hljs-keyword">int</span> botRequestDelay = <span class="hljs-number">1000</span>;
+<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> lastTimeBotRan;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ledPinR = <span class="hljs-number">12</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ledPinG = <span class="hljs-number">14</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> ledPinB = <span class="hljs-number">27</span>;
+<span class="hljs-keyword">bool</span> ledStateR = <span class="hljs-literal">LOW</span>;
+<span class="hljs-keyword">bool</span> ledStateG = <span class="hljs-literal">LOW</span>;
+<span class="hljs-keyword">bool</span> ledStateB = <span class="hljs-literal">LOW</span>;
+
+<span class="hljs-comment">// Handle what happens when you receive new messages</span>
+<span class="hljs-keyword">void</span> handleNewMessages(<span class="hljs-keyword">int</span> numNewMessages) {
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"handleNewMessages"</span>);
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-keyword">String</span>(numNewMessages));
+
+  <span class="hljs-built_in">for</span> (<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>; i&lt;numNewMessages; i++) {
+    <span class="hljs-comment">// Chat id of the requester</span>
+    <span class="hljs-keyword">String</span> chat_id = <span class="hljs-keyword">String</span>(bot.messages[i].chat_id);
+    <span class="hljs-built_in">if</span> (chat_id != CHAT_ID){
+      bot.sendMessage(chat_id, <span class="hljs-string">"Unauthorized user"</span>, <span class="hljs-string">""</span>);
+      <span class="hljs-built_in">continue</span>;
+    }
+
+    <span class="hljs-comment">// Print the received message</span>
+    <span class="hljs-keyword">String</span> <span class="hljs-built_in">text</span> = bot.messages[i].<span class="hljs-built_in">text</span>;
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">text</span>);
+
+    <span class="hljs-keyword">String</span> from_name = bot.messages[i].from_name;
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/start"</span>) {
+      <span class="hljs-keyword">String</span> welcome = <span class="hljs-string">"Welcome, "</span> + from_name + <span class="hljs-string">".\n"</span>;
+      welcome += <span class="hljs-string">"Use the following commands to control your outputs.\n\n"</span>;
+      welcome += <span class="hljs-string">"/redled_on to turn RED LED ON \n"</span>;
+      welcome += <span class="hljs-string">"/redled_off to turn RED LED OFF \n"</span>;
+      welcome += <span class="hljs-string">"/statered to request current RED LED state \n"</span>;
+      welcome += <span class="hljs-string">"/greenled_on to turn GREEN LED ON \n"</span>;
+      welcome += <span class="hljs-string">"/greenled_off to turn GREEN LED OFF \n"</span>;
+      welcome += <span class="hljs-string">"/stategreen to request current GREEN LED state \n"</span>;
+      welcome += <span class="hljs-string">"/blueled_on to turn BLUE LED ON \n"</span>;
+      welcome += <span class="hljs-string">"/blueled_off to turn BLUE LED OFF \n"</span>;
+      welcome += <span class="hljs-string">"/stateblue to request current BLUE LED state \n"</span>;
+      bot.sendMessage(chat_id, welcome, <span class="hljs-string">""</span>);
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/redled_on"</span>) {
+      bot.sendMessage(chat_id, <span class="hljs-string">"RED LED state set to ON"</span>, <span class="hljs-string">""</span>);
+      ledStateR = <span class="hljs-literal">HIGH</span>;
+      <span class="hljs-built_in">digitalWrite</span>(ledPinR, ledStateR);
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/redled_off"</span>) {
+      bot.sendMessage(chat_id, <span class="hljs-string">"RED LED state set to OFF"</span>, <span class="hljs-string">""</span>);
+      ledStateR = <span class="hljs-literal">LOW</span>;
+      <span class="hljs-built_in">digitalWrite</span>(ledPinR, ledStateR);
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/statered"</span>) {
+      <span class="hljs-built_in">if</span> (<span class="hljs-built_in">digitalRead</span>(ledPinR)){
+        bot.sendMessage(chat_id, <span class="hljs-string">"RED LED is ON"</span>, <span class="hljs-string">""</span>);
+      }
+      <span class="hljs-built_in">else</span>{
+        bot.sendMessage(chat_id, <span class="hljs-string">" RED LED is OFF"</span>, <span class="hljs-string">""</span>);
+      }
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/greenled_on"</span>) {
+      bot.sendMessage(chat_id, <span class="hljs-string">"GREEN LED state set to ON"</span>, <span class="hljs-string">""</span>);
+      ledStateG = <span class="hljs-literal">HIGH</span>;
+      <span class="hljs-built_in">digitalWrite</span>(ledPinG, ledStateG);
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/greenled_off"</span>) {
+      bot.sendMessage(chat_id, <span class="hljs-string">"GREEN LED state set to OFF"</span>, <span class="hljs-string">""</span>);
+      ledStateG = <span class="hljs-literal">LOW</span>;
+      <span class="hljs-built_in">digitalWrite</span>(ledPinG, ledStateG);
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/stategreen"</span>) {
+      <span class="hljs-built_in">if</span> (<span class="hljs-built_in">digitalRead</span>(ledPinG)){
+        bot.sendMessage(chat_id, <span class="hljs-string">"GREEN LED is ON"</span>, <span class="hljs-string">""</span>);
+      }
+      <span class="hljs-built_in">else</span>{
+        bot.sendMessage(chat_id, <span class="hljs-string">" GREEN LED is OFF"</span>, <span class="hljs-string">""</span>);
+      }
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/blueled_on"</span>) {
+      bot.sendMessage(chat_id, <span class="hljs-string">"BLUE LED state set to ON"</span>, <span class="hljs-string">""</span>);
+      ledStateB = <span class="hljs-literal">HIGH</span>;
+      <span class="hljs-built_in">digitalWrite</span>(ledPinB, ledStateB);
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/blueled_off"</span>) {
+      bot.sendMessage(chat_id, <span class="hljs-string">"BLUE LED state set to OFF"</span>, <span class="hljs-string">""</span>);
+      ledStateB = <span class="hljs-literal">LOW</span>;
+      <span class="hljs-built_in">digitalWrite</span>(ledPinB, ledStateB);
+    }
+
+    <span class="hljs-built_in">if</span> (<span class="hljs-built_in">text</span> == <span class="hljs-string">"/stateblue"</span>) {
+      <span class="hljs-built_in">if</span> (<span class="hljs-built_in">digitalRead</span>(ledPinB)){
+        bot.sendMessage(chat_id, <span class="hljs-string">"BLUE LED is ON"</span>, <span class="hljs-string">""</span>);
+      }
+      <span class="hljs-built_in">else</span>{
+        bot.sendMessage(chat_id, <span class="hljs-string">" BLUE LED is OFF"</span>, <span class="hljs-string">""</span>);
+      }
+    }
+  }
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+  <span class="hljs-built_in">pinMode</span>(ledPinR, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(ledPinG, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">pinMode</span>(ledPinB, <span class="hljs-literal">OUTPUT</span>);
+  <span class="hljs-built_in">digitalWrite</span>(ledPinR, ledStateR);
+  <span class="hljs-built_in">digitalWrite</span>(ledPinG, ledStateG);
+  <span class="hljs-built_in">digitalWrite</span>(ledPinB, ledStateB);
+
+  <span class="hljs-comment">// Connect to Wi-Fi</span>
+  <span class="hljs-built_in">WiFi</span>.mode(WIFI_STA);
+  <span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">begin</span>(ssid, password);
+  <span class="hljs-built_in">while</span> (<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED) {
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Connecting to WiFi.."</span>);
+  }
+  <span class="hljs-comment">// Print ESP32 Local IP Address</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">localIP</span>());
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+  <span class="hljs-built_in">if</span> (<span class="hljs-built_in">millis</span>() &gt; lastTimeBotRan + botRequestDelay)  {
+    <span class="hljs-keyword">int</span> numNewMessages = bot.getUpdates(bot.last_message_received + <span class="hljs-number">1</span>);
+
+    <span class="hljs-built_in">while</span>(numNewMessages) {
+      <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"got response"</span>);
+      handleNewMessages(numNewMessages);
+      numNewMessages = bot.getUpdates(bot.last_message_received + <span class="hljs-number">1</span>);
+    }
+    lastTimeBotRan = <span class="hljs-built_in">millis</span>();
+  }
+}
+</code></pre><h2 id="follow-up-problem-statement">Follow-up Problem Statement</h2>
+<p>Try to integrate any sensor(s) of your choice and get their readings through the Telegram Bot. Also think about any other features you can implement by just adding to/modifying the above given code</p>
+<h2 id="references">References</h2>
+<p><a href="https://randomnerdtutorials.com/telegram-control-esp32-esp8266-nodemcu-outputs/">Telegrmam: Contol of ESP32/ESP8266 Outputs</a></p>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="pull-up-down-resistors">Pull Up/Down resistors</h1>
+                <p>In digital circuitry, the two valid voltage levels are known as logic HIGH (On) and logic LOW (Off). Usually, logic HIGH is the supply voltage value (Vcc) and logic LOW value is the ground. We all know that digital systems work based on the inputs we give. For example, the button we press in a vending machine is a digital input, the keys we type on a keyboard are digital inputs. Their valid states are either logic HIGH or LOW. There is a simple digital circuit present below:</p>
+            </div>
+
+            <div class="content">
+
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/logic2.jpg?raw=true" alt="temp"></p>
+                <p>Also, sometimes we need an input to be present in it&#39;s default state and only need it to switch to the other state when the user enters the input (Pushbutton example). The circuit below seems like it achieves the purpose:</p>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/logic1.jpg?raw=true" alt="temp"></p>
+                <p>However, there are some problems. The problem with the first circuit is that when the switch is open, the input wire is neither HIGH nor LOW. Instead it is <strong>Floating</strong> between Vcc and Gnd. The problem with the second circuit is that when the input we want is logic LOW, the switch should be closed. This leads to shorting of the battery which can cause a lot of issues (From damaging the circuitry to energy losses). Hence, we need a different circuit to resolve these issues and that&#39;s where the concept of Pull Up/Down resistors was introduced.</p>
+                <h2 id="concept-behind-pull-up-down-resistors-">Concept behind Pull Up/Down resistors:</h2>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/pullupdown.jpg?raw=true" alt="temp"></p>
+                <p>When a pull Up/Down resistor is used, the input terminal is automatically maintained at a valid default state. When the default state is logic HIGH, the resistor connects the input to Vcc and hence, known as <strong>Pull Up</strong> Resistor. If the default state is logic LOW, then the resistor connects input to Gnd and hence, known as <strong>Pull down</strong> resistor. They ensure that the input terminal is never floating and also won&#39;t allow shorting of the source. Now, that we understood the concept of Pull Up/Down resistors, the next step is to find what are their values. But before doing that, first we must understand the range of voltage for different digital states. </p>
+                <h2 id="logic-levels">Logic levels</h2>
+                <p>We know that inputs are nothing but electric voltages and hence they are continuous variables, i.e., they range over a continuum of real values (say from 0 to 5V). But we are trying to assign only two discrete valid states. Hence, there must be some mapping between the real voltage values and the discrete logic values. We can say that logic LOW is 0V (Gnd) and logic HIGH is Vcc (Usually 5V). However, practical systems need not have only either of these two voltages and can also have intermediate values like 4.3V or 1.7V. Hence, we need a range of values to be deemed as logic LOW and another range of values to be deemed as logic HIGH. The picture below illustrates one particular example (TTL 74LSxxx series of digital logic gates):</p>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/logiclevels.jpg?raw=true" alt="temp"></p>
+                <p>This image shows the valid logic levels and also the voltages which are neither LOW nor HIGH. In case of a floating wire, such voltages can occur causing a problem in the system. Once, the logic levels are known, we can find the Pull Up/Down resistor values using some quick math and understanding.</p>
+                <h2 id="finding-the-resistor-values-">Finding the resistor values:</h2>
+                <h3 id="pull-up-resistor-value-calculation-">Pull up resistor value calculation:</h3>
+                <p>Let&#39;s say that Vcc is 5V and the range of voltages that belong to the logic HIGH class is 3.0V to 5.0V. Also, let&#39;s say that the maximum current that flows from Vcc into the digital circuitry when the switch is left opened is 1.0 mA. There is no problem when the switch is closed as in that case, the input is proper logic LOW (0V). However, when the switch is open, the input wire is pulled up to Vcc using a resistor. Let its resistance be <strong>R_up</strong> (in ohm). Clearly, the maximum drop across it could be R_up mV
+                (1 ma x R_up ohms). This drop is also equal to:
+                                                             Vcc - V_input
+                Hence, V_input = Vcc-V_drop = 5-V_drop. Clearly, more the value of R_up, more will be the value of V_drop and hence, less will be the value of V_input. Hence, we need to choose R_up in such a way that V_drop doesn&#39;t reduce V_input below 3V for the max. current of 1mA. Hence:
+                                                             R_up = (5-3)/(1e-3) = 2 k ohms.</p>
+                <p>A more general formula is given below:</p>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/pullupval.jpg?raw=true" alt="temp"></p>
+                <p>where:</p>
+                <ul>
+                <li>Vcc = Source voltage</li>
+                <li>VIH(Min) = Minimum acceptable voltage for logic HIGH</li>
+                <li>IIH = Maximum current through the pull up resistor when switch is open</li>
+                </ul>
+                <p>Hence, R_up can have a max, of 2k ohm resistance but not more than that. Inface, it is advised to have a R_up below this max. value as that provides room for small error and noises in the voltage. However, having very low R_up can lead to huge currents leading to power losses and Joule&#39;s heating. Hence, optimum value must be chosen depending on the application. </p>
+                <h3 id="pull-up-resistor-value-connecting-multiple-inputs-">Pull up resistor value connecting multiple inputs:</h3>
+                <p>Let&#39;s assume a single pull up resistor is pulling up multiple inputs to Vcc. In that case, the resistance must be changed because now the total current through the resistor will be high. Say it is connected to 5 inputs and the max. current through all the inputs are 20mA. Clearly, the max. current through the resistor will be 5x20mA = 100mA. Hence, the new R_up value will be given by this formula:</p>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/pullupvalfan.jpg?raw=true" alt="temp"></p>
+                <p>This particular method of pulling up multiple inputs is called <strong>Fan-in</strong> of inputs. If the resistor pulls up 10 inputs then the fan-in ratio is 10.</p>
+                <h3 id="pull-down-resistor-value-calculation-">Pull down resistor value calculation:</h3>
+                <p>The concept is exactly same as that of the pull up resistor value calculation. The only changes are that now instead of having a minimum value for V_input, we will have a maximum value for it uptill which it can be deemed as a logic LOW. So, let&#39;s say the max. current in switch open state is IIL, the max. voltage is VIL(Max). Hence, the formula will be:</p>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/pulldownval.jpg?raw=true" alt="temp"></p>
+                <p>Again, the value of resistance we obtained is the maximum limit. It is advised to use a resistor with lower resistance for error tolerance. However, it can&#39;t be lowered as much as we want because that would lead to high currents. Hence, again we need to find the optimum value. </p>
+                <h3 id="pull-down-resistor-value-connecting-multiple-inputs-">Pull down resistor value connecting multiple inputs:</h3>
+                <p>The concept is exactly same as that of a pull up resistor connecting multiple inputs. You just need to find the max. value for R in a single-input case and divide that value by the fan-in ratio to obtain the new maximum limit.</p>
+                <h2 id="open-collector-outputs-and-pull-up-resistor-value-calculation-">Open-collector outputs and pull up resistor value calculation:</h2>
+                <p>Sometimes, we may also need an output which is left open, i.e., it can either be logic LOW or must be left open so that the user can manually pull it up to a desired voltage level. Such circuits help in providing different voltage levels for the output terminal. For example, depending on the ratings of the load, the user may pull it up to a DC 5V source or a DC 25V source. The circuitry just acts as a control system and doesn&#39;t actually set the output HIGH. Such outputs are called as <strong>Open-collector</strong> outputs because usually they are the collector terminals of the transistors present within the internal circuitry. The diagrams are given below:</p>
+                <p>OFF case(Open circuit):</p>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/opencoloff.jpg?raw=true" alt="temp"></p>
+                <p>ON case(Closed circuit):</p>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Getting%20Started/Images/opencolon.jpg?raw=true" alt="temp"></p>
+                <p>Now, let&#39;s find the limits for the Pull up resistance:</p>
+                <p><strong>1. Maximum value:</strong>
+                The max. value of the resistance is obtained in the OFF case. In this O case, theoretically, the transistor behaves like an open circuit. However, it&#39;ll still have some leakage current. The max. value of this leakage current will be given in the datasheet. Similarly, the max. value of the current throught the load will also be given in the datasheet. Hence, we can find the max. value of the pull up resistor current in OFF case. Now, the max. drop across the resistor would be this max. current times the resistance. This drop should be in such a way that the output terminal is having a voltage which is deemed as logic HIGH. Hence, the formula for R_up(Max.) is:</p>
+                <pre><code>                                       R_up(<span class="hljs-name">Max</span>.) = (<span class="hljs-name">Vcc-VIH</span>)/(<span class="hljs-name">I_pullup_OFF</span>)
+                </code></pre><p>where:</p>
+                <ul>
+                <li>Vcc = Source voltage                     </li>
+                <li>VIH(Min) = Minimum acceptable voltage for logic HIGH</li>
+                <li>I_pullup_OFF = Maximum current through the pull up resistor when in OFF case</li>
+                </ul>
+                <p>This limit is a maximum for the resistance as any other resistance higher than this value will increase the drop and can make the output voltage value go below the VIH(Min.) value.</p>
+                <p><strong>2. Minimum value:</strong>
+                The min. value of the resistance is obtained in the ON case. In this ON case, theoretically, the transistor behaves like a short circuit and hence, the output terminal is perfectly grounded. However, in reality, the transistor will have some resistance and hence, V_output will not be Gnd. Let the current through the transistor be I_L. The ratings for currents through the transistor and the load will be specified in the datasheet and hence, we can find the I_pullup_ON value based on those ratings. The formula for R_up(Min.) is:                            </p>
+                <pre><code>                                       R_up(<span class="hljs-name">Min</span>.) = (<span class="hljs-name">Vcc-VIL</span>)/(<span class="hljs-name">I_pullup_ON</span>)
+                </code></pre><p>where:</p>
+                <ul>
+                <li>Vcc = Source voltage                     </li>
+                <li>VIL(Max) = Maximum acceptable voltage for logic LOW</li>
+                <li>I_pullup_ON = Maximum current through the pull up resistor when in ON case        </li>
+                </ul>
+                <p>This limit is a minimum for the resistance as any other resistance lower than this value will increase the I_L current leading to an output voltage more than the acceptable level for logic LOW.</p>
+                <h2 id="references-">References:</h2>
+                <p>Refer these links for detailed explanation:</p>
+                <ul>
+                <li><a href="https://www.electronics-tutorials.ws/logic/pull-up-resistor.html">Pull Up/Down resistors explained</a></li>
+                <li><a href="https://www.ti.com/lit/an/slva485/slva485.pdf?ts=1617170839444&amp;ref_url=https%253A%252F%252Fwww.google.com%252F">Choosing an appropriate Pull Up/Down resistor</a></li>
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

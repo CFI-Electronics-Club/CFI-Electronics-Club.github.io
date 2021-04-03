@@ -1,0 +1,77 @@
+/* .container {
+  background-color: antiquewhite !important;
+}
+nav {
+  background-color: antiquewhite !important;
+} */
+body {
+  background-color: #222831 !important;
+  font-family: "Archivo Black", sans-serif !important;
+}
+.navbar {
+  padding: 0.1rem 0.7rem !important;
+}
+.navbar-brand {
+  color: #ec4646 !important; /* Darker */
+  font-weight: bolder;
+  font-size: 20px;
+}
+.nav-link {
+  color: white !important;
+}
+.table {
+  font-family: "Montserrat", sans-serif;
+}
+.navbar-item img {
+  max-height: 3.75rem !important;
+}
+.board {
+  margin: 30px auto;
+  width: 100%;
+  height: 100%;
+  max-width: 700px;
+  display: flex;
+  border-radius: 27px;
+  background: linear-gradient(145deg, #1f242c, #242b34);
+  box-shadow: 12px 12px 12px #101317, -12px -12px 12px #343d4b;
+}
+#specs {
+  margin: auto;
+  display: grid;
+  margin-top: 45px;
+}
+#kit-content {
+  margin: auto;
+  display: grid;
+  margin-top: 45px;
+}
+#comparison {
+  margin-top: 45px;
+  display: grid;
+}
+#projects {
+  margin-top: 45px;
+}
+#images {
+  margin-top: 45px;
+}
+.cfi {
+  border-radius: 0px;
+  background: #4a4a4a;
+  box-shadow: 11px 11px 22px #212121, -11px -11px 22px #737373;
+}
+.articles {
+  max-width: 700px;
+  margin: 50px auto;
+}
+.articles li {
+  margin: 25px;
+}
+p,
+h5,
+h4,
+ul,
+ol {
+  color: white;
+}
+

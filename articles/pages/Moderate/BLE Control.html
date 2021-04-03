@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="ble-based-proximity-control-using-esp32-detect-presence-of-ble-devices">BLE based Proximity Control using ESP32 – Detect Presence of BLE Devices</h1>
+<p>Proximity sensors can be described as one of a kind switches that detect a nearby object with the help of light, electromagnetic field, or sound. Typically, these types of devices are designed to detect nearby subjects, and often it&#39;s the practical application that most of these sensors are going to be used in. But there are circumstances where the subject is far away from the sensor or the subject is blocked by an obstruction, in these types of situations, we can use BLE (Bluetooth Low Energy) devices to detect and sense the proximity of the object. The ESP32 development board has built-in BLE, which we have used in many other projects. </p>
+            </div>
+
+            <div class="content">
+
+<h2 id="what-is-bluetooth-low-energy-ble-">What is Bluetooth Low Energy (BLE)?</h2>
+<p>BLE stands for Bluetooth Low Energy, and it came to our everyday lives in 2011, because at that time of the year every major manufacturer started embedding BLE technology on their devices. BLE is a low power wireless communication technology that was developed for battery power applications which can be used to communicate among devices over a short distance. Some of the devices you use every day have Bluetooth built into it like your smartphone, your smartwatch, wireless earbuds, wireless speakers, smart home devices, and more embedded Bluetooth to communicate or to get location data.</p>
+<h2 id="how-the-ble-proximity-sensor-works-">How the BLE Proximity Sensor Works?</h2>
+<p>BLE servers regularly broadcast advertisement signals so the clients can search for it and connect to it. This advertisement signal contains a unique BLE MAC (Media Access Control) address, which is very similar to a MAC address used in Wi-Fi because our ESP32 module has Bluetooth built-in, we could easily detect this broadcasted signal and compare it to a lookup table, to detect the presence of a known device. Once the device is verified, we can turn on a light locally or we can use Adafruit IO to trigger a notification on our android application.</p>
+<h2 id="materials-required">Materials Required</h2>
+<ul>
+<li>ESP32 Board</li>
+<li>Mobile Phone</li>
+<li>Any BLE Enabled device, be it a smartwatch or fitband or bluetooth speaker. Here we take a fitband to demonstrate.</li>
+</ul>
+<h2 id="code">Code</h2>
+<pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;BLEDevice.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;BLEUtils.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;BLEScan.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;BLEAdvertisedDevice.h&gt;</span></span>
+<span class="hljs-keyword">String</span> knownBLEAddresses[] = {<span class="hljs-string">"6E:bc:55:18:cf:7b"</span>, <span class="hljs-string">"53:3c:cb:56:36:02"</span>, <span class="hljs-string">"40:99:4b:75:7d:2f"</span>, <span class="hljs-string">"5c:5b:68:6f:34:96"</span>};
+<span class="hljs-keyword">int</span> RSSI_THRESHOLD = <span class="hljs-number">-55</span>;
+<span class="hljs-keyword">bool</span> device_found;
+<span class="hljs-keyword">int</span> scanTime = <span class="hljs-number">5</span>; <span class="hljs-comment">//In seconds</span>
+BLEScan* pBLEScan;
+<span class="hljs-keyword">class</span> MyAdvertisedDeviceCallbacks: <span class="hljs-keyword">public</span> BLEAdvertisedDeviceCallbacks {
+    <span class="hljs-keyword">void</span> onResult(BLEAdvertisedDevice advertisedDevice) {
+      <span class="hljs-built_in">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; (<span class="hljs-keyword">sizeof</span>(knownBLEAddresses) / <span class="hljs-keyword">sizeof</span>(knownBLEAddresses[<span class="hljs-number">0</span>])); i++)
+      {
+        <span class="hljs-comment">//Uncomment to Enable Debug Information</span>
+        <span class="hljs-comment">//Serial.println("*************Start**************");</span>
+        <span class="hljs-comment">//Serial.println(sizeof(knownBLEAddresses));</span>
+        <span class="hljs-comment">//Serial.println(sizeof(knownBLEAddresses[0]));</span>
+        <span class="hljs-comment">//Serial.println(sizeof(knownBLEAddresses)/sizeof(knownBLEAddresses[0]));</span>
+        <span class="hljs-comment">//Serial.println(advertisedDevice.getAddress().toString().c_str());</span>
+        <span class="hljs-comment">//Serial.println(knownBLEAddresses[i].c_str());</span>
+        <span class="hljs-comment">//Serial.println("*************End**************");</span>
+        <span class="hljs-built_in">if</span> (strcmp(advertisedDevice.getAddress().toString().c_str(), knownBLEAddresses[i].c_str()) == <span class="hljs-number">0</span>)
+                        {
+          device_found = true;
+                          <span class="hljs-built_in">break</span>;
+                        }
+        <span class="hljs-built_in">else</span>
+          device_found = false;
+      }
+      <span class="hljs-built_in">Serial</span>.printf(<span class="hljs-string">"Advertised Device: %s \n"</span>, advertisedDevice.toString().c_str());
+    }
+};
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>); <span class="hljs-comment">//Enable UART on ESP32</span>
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Scanning..."</span>); <span class="hljs-comment">// Print Scanning</span>
+  <span class="hljs-built_in">pinMode</span>(<span class="hljs-literal">LED_BUILTIN</span>, <span class="hljs-literal">OUTPUT</span>); <span class="hljs-comment">//make BUILTIN_LED pin as output</span>
+  BLEDevice::init(<span class="hljs-string">""</span>);
+  pBLEScan = BLEDevice::getScan(); <span class="hljs-comment">//create new scan</span>
+  pBLEScan-&gt;setAdvertisedDeviceCallbacks(<span class="hljs-keyword">new</span> MyAdvertisedDeviceCallbacks()); <span class="hljs-comment">//Init Callback Function</span>
+  pBLEScan-&gt;setActiveScan(true); <span class="hljs-comment">//active scan uses more power, but get results faster</span>
+  pBLEScan-&gt;setInterval(<span class="hljs-number">100</span>); <span class="hljs-comment">// set Scan interval</span>
+  pBLEScan-&gt;setWindow(<span class="hljs-number">99</span>);  <span class="hljs-comment">// less or equal setInterval value</span>
+}
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+  <span class="hljs-comment">// put your main code here, to run repeatedly:</span>
+  BLEScanResults foundDevices = pBLEScan-&gt;start(scanTime, false);
+  <span class="hljs-built_in">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; foundDevices.getCount(); i++)
+  {
+    BLEAdvertisedDevice device = foundDevices.getDevice(i);
+    <span class="hljs-keyword">int</span> rssi = device.getRSSI();
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"RSSI: "</span>);
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(rssi);
+    <span class="hljs-built_in">if</span> (rssi &gt; RSSI_THRESHOLD &amp;&amp; device_found == true)
+      <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-literal">LED_BUILTIN</span>, <span class="hljs-literal">HIGH</span>);
+    <span class="hljs-built_in">else</span>
+      <span class="hljs-built_in">digitalWrite</span>(<span class="hljs-literal">LED_BUILTIN</span>, <span class="hljs-literal">LOW</span>);
+  }
+  pBLEScan-&gt;clearResults();   <span class="hljs-comment">// delete results fromBLEScan buffer to release memory</span>
+}
+</code></pre><h2 id="follow-up-projects">Follow up Projects</h2>
+<p>Using BLE try setting up communication network between the Phone and ESP32.</p>
+<h2 id="references">References</h2>
+<p>You can find more details of the project and the description of the components <a href="https://circuitdigest.com/microcontroller-projects/ble-based-proximity-control-using-esp32">here</a></p>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

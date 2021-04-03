@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="iot-based-heart-rate-monitor-using-max30100-pulse-oximeter-and-esp32">IoT Based Heart Rate Monitor using MAX30100 Pulse Oximeter and ESP32</h1>
+                <p>Pulse oximetry is a widely used medical measurement instrument and it is a non-invasive and painless test that measures oxygen saturation level in our blood that can easily detect small changes in oxygen. In the current Covid-19 situation, it has become important to track the oxygen level of multiple patients at the same time remotely without getting into contact with the patient.</p>
+            </div>
+
+            <div class="content">
+
+                <h2 id="description">Description</h2>
+                <p>So, in this project, we build a pulse oximeter using MAX30100 Pulse oximeter and ESP32 that will track the Blood Oxygen level and send the data via internet by connecting to a Wi-Fi network. This way, we can monitor multiple patients remotely by maintaining social distance with the patients. The obtained data will be shown as a graph which makes it easier for tracking and analyzing the patient’s condition. Previously, we have also built other heart rate monitors using pulse sensors. And if you are interested in other Covid-19 related projects, you can check out the Human body thermometer, Smart IR Thermometer for fever monitoring, and Wall-Mount Temperature scanner that we build earlier.</p>
+                <h2 id="pulse-oximeter-sensor-max30100-sensor">Pulse Oximeter sensor : MAX30100 Sensor</h2>
+                <p>MAX30100 sensor is integrated pulse oximetry and heart rate monitor module. It communicates with the I2C data line and provides the SpO2 and Pulse information to the host microcontroller unit. It uses photodetectors, optical elements where red, green IR LED modulates the LED pulses. The LED current is configurable from 0 to 50mA. The below image is showing the MAX30100 sensor.The above sensor module works with 1.8V to the 5.5V range. The pull-up resistors for the I2C pins are included in the module.</p>
+                <h2 id="materials-required">Materials Required</h2>
+                <ol>
+                <li>ESP32</li>
+                <li>A WiFi connection</li>
+                <li>MAX30100 Sensor</li>
+                <li>Adafruit IO user id and a custom created dashboard (Will make it further)</li>
+                <li>5V adequate power supply unit with the rated current of at least 1A</li>
+                <li>USB cable Micro USB to USBA</li>
+                </ol>
+                <h2 id="circuit-diagram">Circuit Diagram</h2>
+                <p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/raw/main/Moderate%20or%20Difficult%20Projects/Images/Pulse_oximeter.png?raw=true" alt="Schematic"></p>
+                <h2 id="adafruit-io-with-esp32">Adafruit IO with ESP32</h2>
+                <ol>
+                <li>First sign up in the adafruit IO after giving the Fist name, last name, email address, user name, and the password.</li>
+                <li>The blank dashboard window will open after the sign-in process is done. In this segment, we will need to create a dashboard to show the data in various ways. Thus, it is time to create the new dashboard and provide the name of the dashboard and the description.</li>
+                <li>After filling the above form, it is time to create the graph and control section for the sensor.</li>
+                <li>Write down the block name. As we can see in the above image, the toggle function will provide two states, ON and OFF. In the same process, select the graph block.</li>
+                <li>The next and final step is to have the adafruit key. As we can see, we get the adafruit key and this needs to be added in the code.</li>
+                </ol>
+                <p>The Adafruit IO is now configured. It is time to prepare the hardware and create the firmware for this project.</p>
+                <h2 id="code">Code</h2>
+                <pre><code>#include &lt;stdint.h&gt;
+                #include &lt;Wire.h&gt;
+                #include &lt;WiFi.h&gt;
+                #include <span class="hljs-string">"Adafruit_MQTT.h"</span>
+                #include <span class="hljs-string">"Adafruit_MQTT_Client.h"</span>
+                #include <span class="hljs-string">"MAX30100_PulseOximeter.h"</span>  <span class="hljs-comment">//used arduino builtin MAX30100 lib (https://github.com/oxullo/Arduino-MAX30100)</span>
+                #define WLAN_SSID          <span class="hljs-string">"xxxxxxxxx"</span>
+                #define WLAN_PASS        <span class="hljs-string">"2581xxxxx2"</span>
+                #define AIO_UPDATE_RATE_SEC <span class="hljs-number">5</span>
+                #define AIO_SERVER        <span class="hljs-string">"io.adafruit.com"</span>
+                #define AIO_SERVERPORT  <span class="hljs-number">1883</span>                 
+                #define AIO_USERNAME <span class="hljs-string">"xxxxxx"</span>
+                #define AIO_KEY                <span class="hljs-string">"abcdefgh"</span>
+                #define I2C_SDA   <span class="hljs-number">21</span>
+                #define I2C_SCL   <span class="hljs-number">22</span>
+                TaskHandle_t poxReadTaskHld = NULL;
+                TaskHandle_t mqttPubTaskHld = NULL;
+                <span class="hljs-comment">// PulseOximeter is the higher-level interface to the sensor</span>
+                PulseOximeter pox;
+                uint32_t tsLastReport = <span class="hljs-number">0</span>;
+                float bpm_dt=<span class="hljs-number">0</span>;
+                float spo2_dt = <span class="hljs-number">0</span>;
+                WiFiClient client;
+                Adafruit_MQTT_Client mqtt(&amp;client, AIO_SERVER, AIO_SERVERPORT, AIO_USERNAME, AIO_KEY);        
+                Adafruit_MQTT_Subscribe sw_sub = Adafruit_MQTT_Subscribe(&amp;mqtt, AIO_USERNAME <span class="hljs-string">"/feeds/switch"</span>);
+                <span class="hljs-comment">// Notice MQTT paths for AIO follow the form: &lt;username&gt;/feeds/&lt;feedname&gt;</span>
+                Adafruit_MQTT_Publish bpm_pub = Adafruit_MQTT_Publish(&amp;mqtt, AIO_USERNAME <span class="hljs-string">"/feeds/bpm"</span>);
+                Adafruit_MQTT_Publish spo2_pub = Adafruit_MQTT_Publish(&amp;mqtt, AIO_USERNAME <span class="hljs-string">"/feeds/SpO2"</span>);
+                <span class="hljs-comment">// Callback (registered below) fired when a pulse is detected</span>
+                <span class="hljs-keyword">void</span> onBeatDetected()
+                {
+                                Serial.println(<span class="hljs-string">"Beat!"</span>)
+                }
+                <span class="hljs-comment"><span class="markdown">/<span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*** Function for pause MAX30100 Read **</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-emphasis">***</span>/</span></span>
+                <span class="hljs-keyword">void</span> stopReadPOX(){
+                  pox.shutdown();
+                }
+                <span class="hljs-comment"><span class="markdown">/<span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*** Function for Start MAX30100 Read **</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-emphasis">***</span>/</span></span>
+                <span class="hljs-keyword">void</span> startReadPOX(){
+                  pox.resume();
+                }
+                <span class="hljs-comment"><span class="markdown">/<span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*** MAX30100 Read task **</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-emphasis">***</span>/</span></span>
+                <span class="hljs-keyword">void</span> poxReadTask( <span class="hljs-keyword">void</span> * param )
+                {
+                  <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>){
+                                <span class="hljs-comment">// Make sure to call update as fast as possible</span>
+                                pox.update();
+                                vTaskDelay( <span class="hljs-number">1</span> / portTICK_PERIOD_MS );
+                  }
+                  poxReadTaskHld = NULL;
+                  vTaskDelete(NULL); <span class="hljs-comment">// kill itself</span>
+                }
+                <span class="hljs-comment"><span class="markdown">/<span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*** MQTT publish task **</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-emphasis">***</span>/</span></span>
+                <span class="hljs-keyword">void</span> mqttPubTask( <span class="hljs-keyword">void</span> * param )
+                {
+                  uint8_t sec_count=<span class="hljs-number">0</span>;
+                  <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>){
+                                Serial.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Heart rate:"</span>);
+                                float bpm_dt = pox.getHeartRate();
+                                Serial.<span class="hljs-built_in">print</span>(bpm_dt);
+                                Serial.<span class="hljs-built_in">print</span>(<span class="hljs-string">"bpm / SpO2:"</span>);
+                                float spo2_dt = pox.getSpO2();
+                                Serial.<span class="hljs-built_in">print</span>(spo2_dt);
+                                Serial.println(<span class="hljs-string">"%"</span>);
+                                <span class="hljs-keyword">if</span>(sec_count &gt;= AIO_UPDATE_RATE_SEC){
+                                <span class="hljs-keyword">if</span> (! bpm_pub.publish(bpm_dt)) {
+                                Serial.println(F(<span class="hljs-string">"Failed to publish bmp.."</span>));
+                                } <span class="hljs-keyword">else</span> {
+                                Serial.println(F(<span class="hljs-string">"bmp publish OK!"</span>));
+                                }
+                                <span class="hljs-keyword">if</span> (! spo2_pub.publish(spo2_dt)) {
+                                Serial.println(F(<span class="hljs-string">"Failed to publish SpO2.."</span>));
+                                } <span class="hljs-keyword">else</span> {
+                                Serial.println(F(<span class="hljs-string">"SpO2 publish OK!"</span>));
+                                }
+                                sec_count=<span class="hljs-number">0</span>;
+                                }
+                                vTaskDelay( <span class="hljs-number">1000</span> / portTICK_PERIOD_MS );
+                                sec_count++;
+                  }
+                  mqttPubTaskHld = NULL;
+                  vTaskDelete(NULL); <span class="hljs-comment">// kill itself</span>
+                }
+                <span class="hljs-comment"><span class="markdown">/<span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">**** MQTT Connect Function **</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-emphasis">***</span>/</span></span>
+                <span class="hljs-comment">// Function to connect and reconnect as necessary to the MQTT server.</span>
+                <span class="hljs-keyword">void</span> MQTT_connect() {
+                  int8_t ret;
+                  <span class="hljs-keyword">if</span> (mqtt.connected()) {
+                                <span class="hljs-keyword">return</span>;
+                  }
+                  Serial.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Connecting to MQTT... "</span>);
+                  uint8_t retries = <span class="hljs-number">3</span>;
+                  <span class="hljs-keyword">while</span> ((ret = mqtt.connect()) != <span class="hljs-number">0</span>) {
+                                Serial.println(mqtt.connectErrorString(ret));
+                                Serial.println(<span class="hljs-string">"Retrying MQTT connection in 5 seconds..."</span>);
+                                mqtt.disconnect();
+                                delay(<span class="hljs-number">5000</span>);
+                                retries--;
+                                <span class="hljs-keyword">if</span> (retries == <span class="hljs-number">0</span>) {
+                                <span class="hljs-keyword">while</span> (<span class="hljs-number">1</span>);
+                                }
+                  }
+                  Serial.println(<span class="hljs-string">"MQTT Connected!"</span>);
+                }
+                <span class="hljs-comment"><span class="markdown">/<span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-strong">*****</span><span class="hljs-emphasis">***</span>/</span></span>
+                <span class="hljs-keyword">void</span> setup()
+                {
+                                Serial.begin(<span class="hljs-number">115200</span>);
+                                Wire.begin(I2C_SDA, I2C_SCL);
+                                WiFi.begin(WLAN_SSID, WLAN_PASS);
+                                <span class="hljs-keyword">while</span> (WiFi.status() != WL_CONNECTED) {
+                                delay(<span class="hljs-number">500</span>);
+                                Serial.<span class="hljs-built_in">print</span>(<span class="hljs-string">"."</span>);
+                                }
+                                Serial.println();
+                                Serial.println(<span class="hljs-string">"WiFi connected"</span>);
+                                Serial.println(<span class="hljs-string">"IP address: "</span>); Serial.println(WiFi.localIP());
+                                mqtt.subscribe(&amp;sw_sub);
+                                Serial.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Initializing pulse oximeter.."</span>);
+                                <span class="hljs-comment">// Initialize the PulseOximeter instance</span>
+                                <span class="hljs-comment">// Failures are generally due to an improper I2C wiring, missing power supply</span>
+                                <span class="hljs-comment">// or wrong target chip</span>
+                                <span class="hljs-keyword">if</span> (!pox.begin()) {
+                                Serial.println(<span class="hljs-string">"FAILED"</span>);
+                                <span class="hljs-keyword">for</span>(;;);
+                                } <span class="hljs-keyword">else</span> {
+                                Serial.println(<span class="hljs-string">"SUCCESS"</span>);
+                                }
+                                <span class="hljs-comment">// The default current for the IR LED is 50mA and it could be changed</span>
+                                <span class="hljs-comment">//   by uncommenting the following line. Check MAX30100_Registers.h for all the</span>
+                                <span class="hljs-comment">//   available options.</span>
+                                pox.setIRLedCurrent(MAX30100_LED_CURR_7_6MA);
+                                <span class="hljs-comment">// Register a callback for the beat detection</span>
+                                pox.setOnBeatDetectedCallback(onBeatDetected);
+                                stopReadPOX();
+                }
+                <span class="hljs-keyword">void</span> loop() {
+                  MQTT_connect();
+                  Adafruit_MQTT_Subscribe *subscription;
+                  <span class="hljs-keyword">while</span> ((subscription = mqtt.readSubscription(<span class="hljs-number">5000</span>)))
+                  {
+                                <span class="hljs-keyword">if</span> (subscription == &amp;sw_sub)
+                                {
+                                Serial.<span class="hljs-built_in">print</span>(F(<span class="hljs-string">"Got: "</span>));
+                                Serial.println((char *)sw_sub.lastread);
+                                <span class="hljs-keyword">if</span> (!strcmp((char*) sw_sub.lastread, <span class="hljs-string">"ON"</span>))
+                                {
+                                Serial.<span class="hljs-built_in">print</span>((<span class="hljs-string">"Starting POX... "</span>));
+                                startReadPOX();
+                                BaseType_t xReturned;
+                                <span class="hljs-keyword">if</span>(poxReadTaskHld == NULL){
+                                xReturned = xTaskCreate(
+                                                poxReadTask,      <span class="hljs-comment">/* Function that implements the task. */</span>
+                                                <span class="hljs-string">"pox_read"</span>,           <span class="hljs-comment">/* Text name for the task. */</span>
+                                                <span class="hljs-number">1024</span>*<span class="hljs-number">3</span>,                  <span class="hljs-comment">/* Stack size in words, not bytes. */</span>
+                                                NULL,    <span class="hljs-comment">/* Parameter passed into the task. */</span>
+                                                <span class="hljs-number">2</span>,<span class="hljs-comment">/* Priority at which the task is created. */</span>
+                                                &amp;poxReadTaskHld );          <span class="hljs-comment">/* Used to pass out the created task's handle. */</span>
+                                }
+                                delay(<span class="hljs-number">100</span>);
+                                <span class="hljs-keyword">if</span>(mqttPubTaskHld == NULL){
+                                xReturned = xTaskCreate(
+                                                mqttPubTask,       <span class="hljs-comment">/* Function that implements the task. */</span>
+                                                <span class="hljs-string">"mqttPub"</span>,             <span class="hljs-comment">/* Text name for the task. */</span>
+                                                <span class="hljs-number">1024</span>*<span class="hljs-number">3</span>,                  <span class="hljs-comment">/* Stack size in words, not bytes. */</span>
+                                                NULL,    <span class="hljs-comment">/* Parameter passed into the task. */</span>
+                                                <span class="hljs-number">2</span>,<span class="hljs-comment">/* Priority at which the task is created. */</span>
+                                                &amp;mqttPubTaskHld );            <span class="hljs-comment">/* Used to pass out the created task's handle. */</span>
+                                }
+                                }
+                                <span class="hljs-keyword">else</span>
+                                {
+                                Serial.<span class="hljs-built_in">print</span>((<span class="hljs-string">"Stoping POX... "</span>));
+                                <span class="hljs-comment">// Detele POX read task</span>
+                                <span class="hljs-keyword">if</span>(poxReadTaskHld != NULL){
+                                vTaskDelete(poxReadTaskHld);
+                                poxReadTaskHld = NULL;
+                                }
+                                <span class="hljs-comment">// Delete the MQTT Pub Task</span>
+                                <span class="hljs-keyword">if</span>(mqttPubTaskHld != NULL){
+                                vTaskDelete(mqttPubTaskHld);
+                                mqttPubTaskHld = NULL;
+                                }
+                                stopReadPOX();
+                                }
+                                }
+                  }
+                }
+                </code></pre><h2 id="references">References</h2>
+                <p>You can find more details of the project and the description of the components <a href="https://circuitdigest.com/microcontroller-projects/ble-based-proximity-control-using-esp32">here</a></p>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

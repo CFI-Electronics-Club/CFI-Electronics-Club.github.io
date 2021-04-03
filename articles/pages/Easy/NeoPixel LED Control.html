@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                <h1 id="controlling-ws2812-neopixel-led-with-esp32-using-blynk-app">Controlling WS2812 NeoPixel LED with ESP32 using Blynk App</h1>
+<p>NeoPixel LED Strip Lights are programmable RGB LED strip which can be programmed to generate any desired lighting pattern. NeoPixel can produce multiple colors in any combination and brightness. It consumes less power and can be addressed individually via programming. In this project, we will learn to control the WS2812 NeoPixel LED strips using ESP32 and Blynk application.</p>
+            </div>
+
+            <div class="content">
+                
+<h2 id="parts-required-">Parts Required:</h2>
+<ul>
+<li>25 LEDs WS2812B NeoPixel LED Strip</li>
+<li>5V, 2 AMP Power supply</li>
+<li>Electronics Club custom ESP32 Development board</li>
+<li>Breadboard</li>
+<li>Jumper wires</li>
+</ul>
+<h2 id="schematic-">Schematic:</h2>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Easy%20Projects/Images/led_strip.png?raw=true" alt="schematic"></p>
+<h2 id="blynk-application-setup-for-neopixel-with-esp32">Blynk Application Setup for NeoPixel with ESP32</h2>
+<p>Blynk is an application that can run over Android and IOS devices to control any IoT devices using our smartphones. We can create our own Graphical user interface to design the IoT application GUI.</p>
+<ul>
+<li>Download Blynk application from Playstore or App store.</li>
+<li>Creating a new Project:
+  -After successful installation, open the application and click on “New Project”. Then it will pop up a new screen, where we need to set the parameters like Project name, board, and connection type. For this project, select the device as “ESP32 Dev Board” and connection type as Wi-Fi and click on “Create”.<ul>
+<li>After the successful creation of the Project, we will get an Authenticate ID in our registered mail. Save the Authenticate ID for future reference.
+<img src="https://iotdesignpro.com/sites/default/files/inline-images/Blynk-Application-Setup.png"></li>
+</ul>
+</li>
+<li>Creating the GUI:<ul>
+<li>Open the project in Blynk, click on the “+” sign where it will show many widgets. In our case, we need an RGB Color Picker which is listed as “zeRGBa” and a Button which will be used for changing the mode of operation in the LED strip.
+<br/>
+<img src="https://iotdesignpro.com/sites/default/files/inline-images/Creating-GUI_0.png"></li>
+</ul>
+</li>
+<li>Setting the Parameter in Widgets:<ul>
+<li>After dragging the widgets to the project, now set its parameters which are used to send the color and mode of control values to ESP32.</li>
+<li>Click on ZeRGBa, then we will get a screen named ZeRGBa setting. Then set the Output option to “Merge” and set the pin to “V2” which is shown in the image below. Similarly, in Button settings, set the output pin to “V3” as shown in the figure below.
+<img src="https://iotdesignpro.com/sites/default/files/inline-images/Blynk-Application-Setup-for-Neopixel.png"></li>
+</ul>
+</li>
+</ul>
+<h2 id="libraries-to-include-">Libraries to include:</h2>
+<p>Here “Adafruit_NeoPixel.h” is used for controlling the RGB LED strip. For including Adafruit_NeoPixel.h library, download the library from <a href="https://github.com/adafruit/Adafruit_NeoPixel">this link</a> and include it using the “Include ZIP Library” option.</p>
+<h2 id="code-">Code:</h2>
+<pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFi.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFiClient.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;BlynkSimpleEsp32.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_NeoPixel.h&gt;</span>    <span class="hljs-comment">// This library is used for controlling the RGB LED strip</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> PIN 15                    <span class="hljs-comment">// Pin number</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NUM 25                    <span class="hljs-comment">// No of LEDs which is used in the strip</span></span>
+Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUM,PIN, NEO_GRB + NEO_KHZ800);    <span class="hljs-comment">// NeoPixel strip object </span>
+<span class="hljs-keyword">char</span> auth[] = <span class="hljs-string">"HoLYSq-Sxxxx"</span>;
+<span class="hljs-keyword">char</span> ssid[] = <span class="hljs-string">"admin"</span>;
+<span class="hljs-keyword">char</span> pass[] = <span class="hljs-string">"12345678"</span>;
+<span class="hljs-keyword">int</span> r,g,b,data;
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>()
+{
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+  Blynk.<span class="hljs-built_in">begin</span>(auth, ssid, pass);
+  pixels.<span class="hljs-built_in">begin</span>();
+}
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>()
+{
+  Blynk.<span class="hljs-built_in">run</span>();
+}
+<span class="hljs-comment">// BLYNK_WRITE function is written to check for incoming data at V3 and V2 Virtual terminal, then assign them in three different variables. The variable r, g, b here represents the value of Red, Green, and Blue code of the selected color. Then these values are sent to the function static1 which is used for driving the LED strip.</span>
+BLYNK_WRITE(V2)
+{
+r = param[<span class="hljs-number">0</span>].asInt();
+g = param[<span class="hljs-number">1</span>].asInt();
+b = param[<span class="hljs-number">2</span>].asInt();
+<span class="hljs-built_in">if</span>(data==<span class="hljs-number">0</span>)
+static1(r,g,b);
+}
+BLYNK_WRITE(V3)
+{
+data = param.asInt();
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(data);
+<span class="hljs-built_in">if</span>(data==<span class="hljs-number">0</span>)
+{
+  static1(r,g,b);
+}
+<span class="hljs-built_in">else</span> <span class="hljs-built_in">if</span>(data==<span class="hljs-number">1</span>)
+{
+  animation1();
+}
+}
+<span class="hljs-comment">// Static1 () function is used to drive the LED strip with distinct colors. Here, pixels.setPixelColor is used for driving the LED as per our required color.</span>
+<span class="hljs-keyword">void</span> static1(<span class="hljs-keyword">int</span> r, <span class="hljs-keyword">int</span> g, <span class="hljs-keyword">int</span> b)
+{
+  <span class="hljs-built_in">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;=NUM;i++)
+  {
+  pixels.setPixelColor(i, pixels.Color(r,g,b));
+  pixels.show();
+  }
+}
+<span class="hljs-comment">// Animation1() function is used to run a customized animation using LEDs. Different animations can be made as per the user's choice as shown below. </span>
+<span class="hljs-keyword">void</span> animation1()
+{
+  <span class="hljs-built_in">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;NUM;i++)
+  {
+    pixels.setPixelColor(i, pixels.Color(<span class="hljs-number">255</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>));
+    pixels.show();
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">100</span>);
+  }
+  <span class="hljs-built_in">for</span>(<span class="hljs-keyword">int</span> i=NUM;i&gt;=<span class="hljs-number">0</span>;i--)
+  {
+    pixels.setPixelColor(i, pixels.Color(<span class="hljs-number">0</span>,<span class="hljs-number">255</span>,<span class="hljs-number">0</span>));
+    pixels.show();
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">100</span>);
+  }
+  <span class="hljs-built_in">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;NUM;i++)
+  {
+    pixels.setPixelColor(i, pixels.Color(<span class="hljs-number">0</span>,<span class="hljs-number">255</span>,<span class="hljs-number">255</span>));
+    pixels.show();
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">100</span>);
+  }
+  <span class="hljs-built_in">for</span>(<span class="hljs-keyword">int</span> i=NUM;i&gt;=<span class="hljs-number">0</span>;i--)
+  {
+    pixels.setPixelColor(i, pixels.Color(<span class="hljs-number">255</span>,<span class="hljs-number">255</span>,<span class="hljs-number">0</span>));
+    pixels.show();
+    <span class="hljs-built_in">delay</span>(<span class="hljs-number">100</span>);
+  }
+}
+</code></pre><h2 id="links-">Links:</h2>
+<ul>
+<li><p>This tutorial is extracted from <a href="https://iotdesignpro.com/projects/controlling-ws2812-neopixel-led-with-esp32-using-blynk-app#:~:text=Open%20Arduino%20IDE%2C%20then%20go,controlling%20the%20RGB%20LED%20strip.">here</a>. For more detailed explanation, you can refer to this link.</p>
+</li>
+<li><p><a href="https://github.com/adafruit/Adafruit_NeoPixel">Adafruit NeoPixel Library</a></p>
+</li>
+</ul>
+
+          
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

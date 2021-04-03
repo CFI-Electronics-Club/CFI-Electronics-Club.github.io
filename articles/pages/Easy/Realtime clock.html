@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+
+                <h1 id="real-time-clock-using-ds3231-module-and-oled-in-esp32">Real time Clock using DS3231 module and OLED in ESP32</h1>
+<p>In this tutorial, we will learn about the Real Time Clock (RTC) and its interfacing with the ESP32 and OLED display. We will use DS3231 RTC module to keep track of the correct time and display it on SPI OLED by using ESP32 as our microcontroller.</p>
+            </div>
+
+            <div class="content">
+<h2 id="what-is-real-time-clock-">What is Real Time Clock??</h2>
+<p>DS3231 is a RTC (Real Time Clock) module. It is used to maintain the date and time for most of the Electronics projects. This module has its own coin cell power supply using which it maintains the date and time even when the main power is removed or the MCU has gone through a hard reset. So once we set the date and time in this module it will keep track of it always. In general most of the other clock modules avaiable in the market, we need to reset the tme every time we off an d on it. There are several types of RTC ICs available like DS1307, DS3231 etc.</p>
+<p><img src="https://circuitdigest.com/sites/default/files/inlineimages/u/DS3231-RTC-Module.jpg" alt="DS3231_Image"></p>
+<h2 id="what-is-oled-display-module-">What is OLED Display module?</h2>
+<p>At the heart of the module is a powerful single-chip CMOS OLED driver controller – SSD1306. It can communicate with the microcontroller in multiple ways including I2C and SPI. SPI is generally faster than I2C but requires more I/O pins. While I2C requires only two pins and can be shared with other I2C peripherals. It’s a trade-off between pins and speed. So, it really boils down to your choice. There are lot of Libraries available for interfacing it with different Microcontrollers, using which we can make the interfacing a lot simpler. These libraries are easy to use and have lot of readily available graphical options. Also there are many online tools available for converting an image into a bit map values to be fed into microcontrollers.</p>
+<p>The description of the individual pins of the OLED Module is shown below:
+<img src="https://user-images.githubusercontent.com/64090461/112970973-601de700-916c-11eb-90df-db84fcf11fa1.png" alt="pin_desc"></p>
+<h2 id="materials-required">Materials Required</h2>
+<ul>
+<li>ESP32 (Microcontroller)</li>
+<li>DS3231 RTC module (The Real time clock)</li>
+<li>7 pin 128×64 OLED display Module (SSD1306) (OLED Module)</li>
+<li>Male-female wires </li>
+<li>Breadboard</li>
+</ul>
+<h2 id="circuit-diagram">Circuit Diagram</h2>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/raw/main/Easy%20Projects/Images/RTC.png?raw=true" alt="Schematic"></p>
+<p>RTC DS3231 IC uses I2C mode of communication. It has SCL, SDA, Vcc and GND pins coming out of it. The Connection of RTC module with ESP32 is given below:</p>
+<ol>
+<li>SCL of RTC -&gt; SCL of ESP32 i.e. Pin D22</li>
+<li>SDA of RTC -&gt; SDA of ESP32 i.e. Pin D21</li>
+<li>GND of RTC -&gt; GND of ESP32</li>
+<li>Vcc of RTC -&gt; Vcc of ESP32</li>
+</ol>
+<p>Here, we are using SPI mode to connect our 128×64 OLED display Module (SSD1306) to ESP32. So, it will use 7 pins. Connections with ESP32 are given as:</p>
+<ol>
+<li>SDA pin of OLED -&gt; PIN 21 of ESP32</li>
+<li>SCK pin of OLED -&gt; PIN 22 of ESP32</li>
+<li>Vdd of OLED -&gt; Vcc of ESP32</li>
+<li>GND of OLED -&gt; GND of ESP32</li>
+</ol>
+<h2 id="libraries-used">Libraries Used</h2>
+<ol>
+<li>Adafruit_SSD1306 : <a href="https://github.com/adafruit/Adafruit_SSD1306">https://github.com/adafruit/Adafruit_SSD1306</a></li>
+<li>Adafruit_GFX : <a href="https://github.com/adafruit/Adafruit-GFX-Library">https://github.com/adafruit/Adafruit-GFX-Library</a></li>
+<li>RTClib : <a href="https://github.com/adafruit/RTClib">https://github.com/adafruit/RTClib</a></li>
+</ol>
+<h2 id="code">Code</h2>
+<pre><code><span class="hljs-comment">// Imprting the Required Libraries</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;SPI.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Wire.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_GFX.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_SSD1306.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"RTClib.h"</span></span>
+
+<span class="hljs-comment">// Instanciating a RTC Module</span>
+RTC_DS3231 rtc;
+<span class="hljs-keyword">char</span> daysOfTheWeek[<span class="hljs-number">7</span>][<span class="hljs-number">12</span>] = {<span class="hljs-string">"Sunday"</span>, <span class="hljs-string">"Monday"</span>, <span class="hljs-string">"Tuesday"</span>, <span class="hljs-string">"Wednesday"</span>, <span class="hljs-string">"Thursday"</span>, <span class="hljs-string">"Friday"</span>, <span class="hljs-string">"Saturday"</span>};
+
+<span class="hljs-comment">// Setting up the OLED Screen</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SCREEN_WIDTH 128  <span class="hljs-comment">// OLED display width, in pixels</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SCREEN_HEIGHT 64  <span class="hljs-comment">// OLED display height, in pixels</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> OLED_RESET    -1  <span class="hljs-comment">// Reset pin # (or -1 if sharing reset pin)</span></span>
+Adafruit_SSD1306 <span class="hljs-built_in">display</span>(SCREEN_WIDTH, SCREEN_HEIGHT, &amp;<span class="hljs-built_in">Wire</span>, OLED_RESET);
+
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() 
+{
+
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">9600</span>);
+
+<span class="hljs-comment">// Searching for the RTC module</span>
+<span class="hljs-built_in">if</span> (! rtc.<span class="hljs-built_in">begin</span>()) {
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Couldn't find RTC"</span>);
+<span class="hljs-built_in">while</span> (<span class="hljs-number">1</span>);
+}
+
+<span class="hljs-comment">// Establishing connection with OLED</span>
+<span class="hljs-built_in">if</span>(!<span class="hljs-built_in">display</span>.<span class="hljs-built_in">begin</span>(SSD1306_SWITCHCAPVCC, <span class="hljs-number">0x3C</span>)) 
+{ 
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(F(<span class="hljs-string">"SSD1306 allocation failed"</span>));
+    <span class="hljs-built_in">for</span>(;;); <span class="hljs-comment">// Don't proceed, loop forever</span>
+}
+
+<span class="hljs-comment">// Finding the Date and time</span>
+rtc.adjust(DateTime(__DATE__, __TIME__));
+
+ <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>();
+ <span class="hljs-built_in">delay</span>(<span class="hljs-number">2</span>);
+ <span class="hljs-built_in">display</span>.clearDisplay();
+
+
+<span class="hljs-built_in">display</span>.clearDisplay();
+<span class="hljs-built_in">display</span>.setTextColor(WHITE);
+<span class="hljs-comment">//display.startscrollright(0x00, 0x0F);</span>
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">5</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"  Clock "</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>();
+<span class="hljs-built_in">delay</span>(<span class="hljs-number">3000</span>);
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>()
+{
+DateTime now = rtc.now(); <span class="hljs-comment">// Getting the instantaneous time</span>
+
+<span class="hljs-comment">// Displaying the seconds</span>
+<span class="hljs-built_in">display</span>.clearDisplay();
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">75</span>,<span class="hljs-number">0</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(now.second(), DEC); 
+
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">25</span>,<span class="hljs-number">0</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">":"</span>);
+
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">65</span>,<span class="hljs-number">0</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">":"</span>);
+
+<span class="hljs-comment">// Displaying the minutes</span>
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">40</span>,<span class="hljs-number">0</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(now.minute(), DEC);
+
+<span class="hljs-comment">// Displaying the hour</span>
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(now.hour(), DEC);
+
+<span class="hljs-comment">// Displaying the day</span>
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">20</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(now.day(), DEC);
+
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">25</span>,<span class="hljs-number">20</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"-"</span>);
+
+<span class="hljs-comment">// Displaying the month</span>
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">40</span>,<span class="hljs-number">20</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(now.month(), DEC);
+
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">55</span>,<span class="hljs-number">20</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"-"</span>);
+
+<span class="hljs-comment">// Displaying the year</span>
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">70</span>,<span class="hljs-number">20</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">println</span>(now.year(), DEC);
+
+<span class="hljs-comment">// Displaying the day of the week</span>
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">40</span>);
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(daysOfTheWeek[now.dayOfTheWeek()]);
+
+<span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>(); 
+}
+</code></pre><h2 id="future-projects">Future Projects</h2>
+<p>Once you have suceesfully completed this tutorial and understood the working of the real time clock, as a follow up to this you could work on the <strong><em>ESP32 world Clock</em></strong>, wherein you provide a menu in the OLED to the user to choose a region in the world from the list and display the real time in that location. As an bonus, you could also adding the world map on the OLED screen.</p>
+<h2 id="references">References</h2>
+<p>You can find more details of the project and the description of the components <a href="https://circuitdigest.com/microcontroller-projects/esp32-real-time-clock-using-ds3231-module">here</a></p>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                <h1 id="fundamentals-of-electronics">Fundamentals of Electronics</h1>
+
+            </div>
+
+            <div class="content">
+<ul>
+<li>Having the basics clear is the most important aspect of any field/subject/...... </li>
+<li>The following writeup has a curate list of resources to fulfill the first bullet point<h2 id="basic-components-and-its-working-">Basic components and its working:</h2>
+</li>
+</ul>
+<p>Below resources covers the basic concepts and working of some regularly used electronic Components.</p>
+<h3 id="-videos-"><strong><em>Videos:</em></strong></h3>
+<ul>
+<li><strong>Resistors to Binary Arithmetic:</strong> <a href="https://youtube.com/playlist?list=PLah6faXAgguOeMUIxS22ZU4w5nDvCl5gs">https://youtube.com/playlist?list=PLah6faXAgguOeMUIxS22ZU4w5nDvCl5gs</a> (Recommended)</li>
+<li><strong>Crisp videos on Basic electronics:</strong> <a href="https://youtube.com/playlist?list=PLYS_1w0FFIANdG78JyJu3tsumsXVIcXUB">https://youtube.com/playlist?list=PLYS_1w0FFIANdG78JyJu3tsumsXVIcXUB</a> </li>
+</ul>
+<h3 id="-blogs-"><strong><em>Blogs:</em></strong></h3>
+<ul>
+<li><strong>Electronic concepts and basic components working:</strong> <a href="https://www.yamanelectronics.com/electronics-basics-for-beginners/">https://www.yamanelectronics.com/electronics-basics-for-beginners/</a></li>
+<li><strong>Integrated Circuits in Detail:</strong> <a href="https://www.elprocus.com/how-integrated-circuits-work-physically/">https://www.elprocus.com/how-integrated-circuits-work-physically/</a></li>
+</ul>
+<h2 id="arduino-most-popular-and-beginner-friendly-microcontroller-">Arduino(Most popular and beginner friendly Microcontroller):</h2>
+<p> Now that you are comfortable with basic Electronics,you can move a step ahead and explore the world of Microcontrollers</p>
+<ul>
+<li><strong>Gist of Microcontrollers:</strong> <a href="https://www.instructables.com/A-Beginners-Guide-to-Microcontrollers/">https://www.instructables.com/A-Beginners-Guide-to-Microcontrollers/</a></li>
+</ul>
+<p>And arduino is most commonly used microcontroller and has tons of resources online,it is extensively documented ,have lots of forums to help you out. </p>
+<p>Below given links are some of the best writeups/videos available out there</p>
+<h3 id="-videos-"><strong><em>Videos:</em></strong></h3>
+<ul>
+<li><strong>Arduino 101:</strong> <a href="https://youtube.com/playlist?list=PLPK2l9Knytg5s2dk8V09thBmNl2g5pRSr">https://youtube.com/playlist?list=PLPK2l9Knytg5s2dk8V09thBmNl2g5pRSr</a></li>
+</ul>
+<h3 id="-blogs-"><strong><em>Blogs:</em></strong></h3>
+<ul>
+<li><strong>One of the best writeups you can find in internet on Basics of Arduino (Covers from Scratch)</strong> \
+<a href="https://www.instructables.com/A-Beginners-Guide-to-Arduino/">https://www.instructables.com/A-Beginners-Guide-to-Arduino/</a></li>
+<li>Above blog briefs about the working of basic electronic components as well</li>
+</ul>
+<h2 id="sensors-">Sensors:</h2>
+<h3 id="go-to-site-https-lastminuteengineers-com-">Go-To Site: <a href="https://lastminuteengineers.com/">https://lastminuteengineers.com/</a></h3>
+<h2 id="extras-">Extras:</h2>
+<ul>
+<li><strong>List of all tools used by Electronics enthusiasts/hobbyists(<strong>Advanced</strong>)</strong>: <a href="https://www.circuitbasics.com/electronic-tools-and-equipment/">https://www.circuitbasics.com/electronic-tools-and-equipment/</a> </li>
+<li><strong>Soldering</strong>: <a href="https://www.youtube.com/watch?v=6rmErwU5E-k">https://www.youtube.com/watch?v=6rmErwU5E-k</a></li>
+<li>Cool and Fun youtube channels:<ul>
+<li>ELECTRNOOBS: <a href="https://www.youtube.com/channel/UCjiVhIvGmRZixSzupD0sS9Q">https://www.youtube.com/channel/UCjiVhIvGmRZixSzupD0sS9Q</a></li>
+<li>ELECTROBOOM: <a href="https://www.youtube.com/channel/UCjiVhIvGmRZixSzupD0sS9Q">https://www.youtube.com/channel/UCjiVhIvGmRZixSzupD0sS9Q</a></li>
+<li>STUFF MADE HERE: <a href="https://www.youtube.com/channel/UCj1VqrHhDte54oLgPG4xpuQ">https://www.youtube.com/channel/UCj1VqrHhDte54oLgPG4xpuQ</a></li>
+<li>GREATSCOTT: <a href="https://www.youtube.com/channel/UC6mIxFTvXkWQVEHPsEdflzQ">https://www.youtube.com/channel/UC6mIxFTvXkWQVEHPsEdflzQ</a></li>
+<li>EEVBLOG: <a href="https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ/">https://www.youtube.com/channel/UC2DjFE7Xf11URZqWBigcVOQ/</a></li>
+<li>PAUL MCWHORTER : <a href="https://www.youtube.com/user/mcwhorpj">https://www.youtube.com/user/mcwhorpj</a></li>
+</ul>
+</li>
+</ul>
+
+          
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

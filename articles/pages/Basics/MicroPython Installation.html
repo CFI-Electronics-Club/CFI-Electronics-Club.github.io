@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                <h1>MicroPython Installation</h1>
+            </div>
+
+            <div class="content">
+
+                <h2 id="what-is-micropython-">What is Micropython?</h2>
+                <p>MicroPython is a re-implementation of Python 3 targeted for microcontrollers and embedded systems. MicroPython is very similar with regular Python. So, if you already know how to program in Python, you also know how to program in MicroPython.</p>
+                <h2 id="python-vs-micropython">Python vs MicroPython</h2>
+                <p>Apart from a few exceptions, the language features of Python are also available in MicroPython. The biggest difference between Python and MicroPython is that MicroPython was designed to work under constrained conditions.</p>
+                <p>Because of that, MicroPython does not come with the full standard library. It only includes a small subset of the Python standard library. However, it does include modules to access low-level hardware – this means that there are libraries to easily access and interact with the GPIOs.</p>
+                <p>Additionally, devices with Wi-Fi capabilities like the ESP8266 and ESP32 include modules to support network connections.</p>
+                <h2 id="why-micropython-">Why MicroPython?</h2>
+                <p>Python is one of the most widely used, simple and easy-to-learn programming languages around. So, the emergence of MicroPython makes it extremely easy and simple to program digital electronics. If you’ve never programmed digital electronics before, MicroPython is a good starting point.</p>
+                <h2 id="setting-up-environment-for-working-with-micropython">Setting up Environment for working with Micropython</h2>
+                <h3 id="1-install-python3-and-pip">1)Install Python3 and pip</h3>
+                <ul>
+                <li>Installing Python: <a href="https://www.tutorialsteacher.com/python/install-python">https://www.tutorialsteacher.com/python/install-python</a></li>
+                <li>Download and Install VS code: <a href="https://code.visualstudio.com/download">https://code.visualstudio.com/download</a></li>
+                <li>Once installed add this extension : <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">https://marketplace.visualstudio.com/items?itemName=ms-python.python</a></li>
+                <li>And you are set :)</li>
+                </ul>
+                <p><em>Note:Before proceeding Connect you board and check whether the port is working properly if not install the necessary driver</em></p>
+                <h3 id="2-get-the-bin-file-from-micropython-website-https-micropython-org-download-esp32-">2) Get the .bin file from Micropython website(<a href="https://micropython.org/download/esp32">https://micropython.org/download/esp32</a>)</h3>
+                <ul>
+                <li>Given below is the link for stable release</li>
+                <li><a href="https://micropython.org/resources/firmware/esp32-idf4-20191220-v1.12.bin">https://micropython.org/resources/firmware/esp32-idf4-20191220-v1.12.bin</a><h3 id="3-install-esptool-and-flash-esp32">3) Install esptool and flash esp32</h3>
+                <pre><code>pip <span class="hljs-keyword">install</span> esptool
+                </code></pre>Note: with some Python installations that command may not work and you’ll receive an error. If that’s the case, try to install esptool.py with:<pre><code>pip3 <span class="hljs-keyword">install</span> esptool
+                python -m pip <span class="hljs-keyword">install</span> esptool
+                pip2 <span class="hljs-keyword">install</span> esptool
+                </code></pre>Go to folder where you downloaded the .bin file<br>Using esptool.py you can erase the flash with the command:<pre><code><span class="hljs-string">esptool.</span><span class="hljs-string">py </span><span class="hljs-built_in">--port</span> <span class="hljs-string">COM5 </span><span class="hljs-string">erase_flash </span>                            <span class="hljs-comment"># For Windows</span>
+                <span class="hljs-string">esptool.</span><span class="hljs-string">py </span><span class="hljs-built_in">--port</span> /<span class="hljs-string">dev/</span><span class="hljs-string">ttyUSB0 </span><span class="hljs-string">erase_flash </span>                    <span class="hljs-comment"># For Linux</span>
+                <span class="hljs-string">esptool.</span><span class="hljs-string">py </span><span class="hljs-built_in">--port</span> /<span class="hljs-string">dev/</span><span class="hljs-string">cu.</span><span class="hljs-string">SLAB_USBtoUART </span><span class="hljs-string">erase_flash </span>          <span class="hljs-comment"># For Mac</span>
+                </code></pre>And then deploy the new firmware using:<pre><code><span class="hljs-string">esptool.</span><span class="hljs-string">py </span><span class="hljs-built_in">--chip</span> <span class="hljs-string">esp32 </span><span class="hljs-built_in">--port</span> <span class="hljs-string">COM5 </span><span class="hljs-string">write_flash </span>-z <span class="hljs-string">0x1000 </span><span class="hljs-string">esp32-idf4-</span><span class="hljs-string">20191220-v1.</span><span class="hljs-string">12.</span><span class="hljs-string">bin </span>                    <span class="hljs-comment"># For Windows</span>
+                <span class="hljs-string">esptool.</span><span class="hljs-string">py </span><span class="hljs-built_in">--chip</span> <span class="hljs-string">esp32 </span><span class="hljs-built_in">--port</span> /<span class="hljs-string">dev/</span><span class="hljs-string">ttyUSB0 </span><span class="hljs-string">write_flash </span>-z <span class="hljs-string">0x1000 </span><span class="hljs-string">esp32-idf4-</span><span class="hljs-string">20191220-v1.</span><span class="hljs-string">12.</span><span class="hljs-string">bin </span>            <span class="hljs-comment"># For Linux</span>
+                <span class="hljs-string">esptool.</span><span class="hljs-string">py </span><span class="hljs-built_in">--chip</span> <span class="hljs-string">esp32 </span><span class="hljs-built_in">--port</span> /<span class="hljs-string">dev/</span><span class="hljs-string">cu.</span><span class="hljs-string">SLAB_USBtoUART </span><span class="hljs-string">write_flash </span>-z <span class="hljs-string">0x1000 </span><span class="hljs-string">esp32-idf4-</span><span class="hljs-string">20191220-v1.</span><span class="hljs-string">12.</span><span class="hljs-string">bin </span>   <span class="hljs-comment"># For Mac</span>
+                </code></pre></li>
+                </ul>
+                <h3 id="to-run-micropython-code-on-esp32">To run Micropython code on ESP32</h3>
+                <pre><code>pip <span class="hljs-keyword">install</span> adafruit-ampy
+                </code></pre><p>Sample code</p>
+                <pre><code>from machine <span class="hljs-keyword">import</span> Pin
+                <span class="hljs-keyword">import</span> time
+                
+                p=Pin(<span class="hljs-number">2</span>,Pin.OUT)
+                
+                def toggle(max):
+                    lap=0
+                
+                    <span class="hljs-keyword">while</span>(lap&lt;max):
+                        p.value(1)
+                        time.sleep(1)
+                        p.value(0)
+                        time.sleep(1)
+                        lap+=1
+                
+                toggle(5)
+                </code></pre><h2 id="-before-proceeding-with-the-below-commands-go-through-the-link-attached-in-the-last-line-"><strong><em>Before proceeding with the below commands, go through the link attached in the last line</em></strong></h2>
+                <p>For uploading the code</p>
+                <pre><code>ampy --port COM5 <span class="hljs-keyword">put</span> code.<span class="hljs-keyword">py</span>                              # For Windows
+                ampy --port /dev/ttyUSB0 <span class="hljs-keyword">put</span> code.<span class="hljs-keyword">py</span>                      # For Linux
+                ampy --port /dev/<span class="hljs-keyword">cu</span>.SLAB_USBtoUART <span class="hljs-keyword">put</span> code.<span class="hljs-keyword">py</span>            # For Mac
+                </code></pre><p>Then run the code using this command after going to the right directory</p>
+                <pre><code>ampy --port COM5 <span class="hljs-keyword">run</span><span class="bash"> code.py                              <span class="hljs-comment"># For Windows</span>
+                </span>ampy --port /dev/ttyUSB0 <span class="hljs-keyword">run</span><span class="bash"> code.py                      <span class="hljs-comment"># For Linux</span>
+                </span>ampy --port /dev/cu.SLAB_USBtoUART <span class="hljs-keyword">run</span><span class="bash"> code.py            <span class="hljs-comment"># For Mac</span></span>
+                </code></pre><h3 id="some-useful-commands-used-in-ampy">Some useful commands used in ampy</h3>
+                <p><a href="https://learn.adafruit.com/micropython-basics-load-files-and-run-code/file-operations">https://learn.adafruit.com/micropython-basics-load-files-and-run-code/file-operations</a></p>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

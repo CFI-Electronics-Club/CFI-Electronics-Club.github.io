@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+          
+                <h1 id="temperature-and-humidity-readings-on-oled-display">Temperature and Humidity Readings on OLED Display</h1>
+<p>The temperature and humidity readings will be measured by the DHT22 sensor. These readings will then be displayed by the OLED Display connected to the Dev Board.</p>
+            </div>
+
+            <div class="content">
+
+<h2 id="components-required">Components Required</h2>
+<ul>
+<li>Dev Board</li>
+<li>0.96 inch OLED Display</li>
+<li>DHT22 temperature and humidity sensor</li>
+<li>Breadboard</li>
+<li>Resistors</li>
+<li>Wires</li>
+</ul>
+<h2 id="required-libraries">Required Libraries</h2>
+<ul>
+<li><strong>OLED Display Libraries</strong> - Adafruit SSD1306 library is a commonly used library to interface the dev board to the OLED display conveniently. To install this type &#39;SSD1306&#39; in the search bar of Manage Libraries. Install the Adafruit version of it. You also need to install the GFX library for graphics. Just search &#39;GFX&#39; in the search bar and install it.</li>
+<li><strong>DHT22 Library</strong> - Search &#39;DHT&#39; in the search bar and install the Adafruit DHT Library. Also install the &#39;Adafruit Unified Sensor&#39; Library.</li>
+</ul>
+<h2 id="schematic">Schematic</h2>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Easy%20Projects/Images/temphumidity.png?raw=true" alt="Schematic"></p>
+<h2 id="code-explanation">Code Explanation</h2>
+<h3 id="importing-libraries">Importing Libraries</h3>
+<pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Wire.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_GFX.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_SSD1306.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_Sensor.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;DHT.h&gt;</span></span>
+</code></pre><h3 id="create-a-display-object">Create a Display Object</h3>
+<p>Here, you need to define the OLED dimensions.</p>
+<pre><code>#<span class="hljs-built_in">define</span> SCREEN_WIDTH <span class="hljs-number">128</span> // OLED <span class="hljs-built_in">display</span> <span class="hljs-built_in">width</span>, <span class="hljs-keyword">in</span> pixels
+#<span class="hljs-built_in">define</span> SCREEN_HEIGHT <span class="hljs-number">64</span> // OLED <span class="hljs-built_in">display</span> <span class="hljs-built_in">height</span>, <span class="hljs-keyword">in</span> pixels
+</code></pre><p>Now, we need to initialize the display object.</p>
+<pre><code>Adafruit_SSD1306 display(<span class="hljs-name">SCREEN_WIDTH</span>, SCREEN_HEIGHT, <span class="hljs-symbol">&amp;Wire</span>, <span class="hljs-number">-1</span>)<span class="hljs-comment">;</span>
+</code></pre><h3 id="create-a-dht-object">Create a DHT Object</h3>
+<p>Here, you need to define the type of DHT sensor you are using.</p>
+<pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DHTTYPE    DHT22</span>
+</code></pre><p>Next, we need to initialize the DHT object</p>
+<pre><code>DHT dht(<span class="hljs-name">DHTPIN</span>, DHTTYPE)<span class="hljs-comment">;</span>
+</code></pre><h3 id="setup">Setup</h3>
+<pre><code><span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+
+  dht.<span class="hljs-built_in">begin</span>();
+
+  <span class="hljs-built_in">if</span>(!<span class="hljs-built_in">display</span>.<span class="hljs-built_in">begin</span>(SSD1306_SWITCHCAPVCC, <span class="hljs-number">0x3C</span>)) {
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(F(<span class="hljs-string">"SSD1306 allocation failed"</span>));
+    <span class="hljs-built_in">for</span>(;;);
+  }
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+  <span class="hljs-built_in">display</span>.clearDisplay();
+  <span class="hljs-built_in">display</span>.setTextColor(WHITE);
+}
+</code></pre><h3 id="getting-readings-from-the-dht-sensor">Getting readings from the DHT Sensor</h3>
+<p>We use the readTemperature() and readHumidity() functions and store these values in variables t and h respectively.</p>
+<pre><code><span class="hljs-attribute">float t</span> = dht.readTemperature();
+<span class="hljs-attribute">float h</span> = dht.readHumidity();
+</code></pre><h3 id="display-the-readings-on-the-oled-display">Display the readings on the OLED Display</h3>
+<pre><code><span class="hljs-comment">// clear display</span>
+  <span class="hljs-built_in">display</span>.clearDisplay();
+
+  <span class="hljs-comment">// display temperature</span>
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Temperature: "</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(t);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">" "</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-built_in">display</span>.cp437(true);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">write</span>(<span class="hljs-number">167</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"C"</span>);
+
+  <span class="hljs-comment">// display humidity</span>
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>, <span class="hljs-number">35</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Humidity: "</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>, <span class="hljs-number">45</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(h);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">" %"</span>); 
+
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>(); 
+}
+</code></pre><h2 id="full-code">Full Code</h2>
+<pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Wire.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_GFX.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_SSD1306.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_Sensor.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;DHT.h&gt;</span></span>
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SCREEN_WIDTH 128 <span class="hljs-comment">// OLED display width, in pixels</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SCREEN_HEIGHT 64 <span class="hljs-comment">// OLED display height, in pixels</span></span>
+
+<span class="hljs-comment">// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)</span>
+Adafruit_SSD1306 <span class="hljs-built_in">display</span>(SCREEN_WIDTH, SCREEN_HEIGHT, &amp;<span class="hljs-built_in">Wire</span>, <span class="hljs-number">-1</span>);
+
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DHTPIN 14     <span class="hljs-comment">// Digital pin connected to the DHT sensor</span></span>
+
+<span class="hljs-comment">// Uncomment the type of sensor in use:</span>
+<span class="hljs-comment">//#define DHTTYPE    DHT11     // DHT 11</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> DHTTYPE    DHT22     <span class="hljs-comment">// DHT 22 (AM2302)</span></span>
+<span class="hljs-comment">//#define DHTTYPE    DHT21     // DHT 21 (AM2301)</span>
+
+DHT dht(DHTPIN, DHTTYPE);
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+
+  dht.<span class="hljs-built_in">begin</span>();
+
+  <span class="hljs-built_in">if</span>(!<span class="hljs-built_in">display</span>.<span class="hljs-built_in">begin</span>(SSD1306_SWITCHCAPVCC, <span class="hljs-number">0x3C</span>)) {
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(F(<span class="hljs-string">"SSD1306 allocation failed"</span>));
+    <span class="hljs-built_in">for</span>(;;);
+  }
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">2000</span>);
+  <span class="hljs-built_in">display</span>.clearDisplay();
+  <span class="hljs-built_in">display</span>.setTextColor(WHITE);
+}
+
+<span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() {
+  <span class="hljs-built_in">delay</span>(<span class="hljs-number">5000</span>);
+
+  <span class="hljs-comment">//read temperature and humidity</span>
+  <span class="hljs-keyword">float</span> t = dht.<span class="hljs-built_in">readTemperature</span>();
+  <span class="hljs-keyword">float</span> h = dht.readHumidity();
+  <span class="hljs-built_in">if</span> (isnan(h) || isnan(t)) {
+    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Failed to read from DHT sensor!"</span>);
+  }
+  <span class="hljs-comment">// clear display</span>
+  <span class="hljs-built_in">display</span>.clearDisplay();
+
+  <span class="hljs-comment">// display temperature</span>
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Temperature: "</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>,<span class="hljs-number">10</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(t);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">" "</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-built_in">display</span>.cp437(true);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">write</span>(<span class="hljs-number">167</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"C"</span>);
+
+  <span class="hljs-comment">// display humidity</span>
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">1</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>, <span class="hljs-number">35</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Humidity: "</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setTextSize</span>(<span class="hljs-number">2</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">setCursor</span>(<span class="hljs-number">0</span>, <span class="hljs-number">45</span>);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(h);
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">" %"</span>); 
+
+  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>(); 
+}
+</code></pre><h2 id="references">References</h2>
+<p><a href="https://randomnerdtutorials.com/esp32-esp8266-dht-temperature-and-humidity-oled-display/#more-85288">Random Nerd Tutorials</a></p>
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

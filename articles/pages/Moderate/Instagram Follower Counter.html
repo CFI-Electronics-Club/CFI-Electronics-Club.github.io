@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="instagram-follower-counter">Instagram Follower Counter</h1>
+                <p> Displays Instagram followers count and current Time</p>
+            </div>
+
+            <div class="content">
+
+                <h2 id="prerequisites">Prerequisites</h2>
+                <ul>
+                <li>NTP (You can refer this: <a href="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Sashank/Internet%20Clock.md">Internet Clock</a>)</li>
+                </ul>
+                <h2 id="components">Components</h2>
+                <ul>
+                <li>ESP32 Board</li>
+                <li>OLED display</li>
+                </ul>
+                <h2 id="schematic">Schematic</h2>
+                <p> <img src="https://user-images.githubusercontent.com/55990571/113220065-31a12880-92a0-11eb-9ca9-936948460ad8.png" alt="esp32_oled"></p>
+                <h2 id="code">Code</h2>
+                <pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Wire.h&gt;</span>                   <span class="hljs-comment">// Only needed for Arduino 1.6.5 and earlier</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"SSD1306.h"</span>                <span class="hljs-comment">// alias for `#include "SSD1306Wire.h"`</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFi.h&gt;</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;NTPClient.h&gt;</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFiUdp.h&gt;</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;HTTPClient.h&gt;</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;Adafruit_GFX.h&gt;</span>           <span class="hljs-comment">// https://github.com/adafruit/Adafruit-GFX-Library</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"Adafruit_LEDBackpack.h"</span>   <span class="hljs-comment">// https://github.com/adafruit/Adafruit_LED_Backpack</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;ArduinoJson.h&gt;</span>            <span class="hljs-comment">// https://github.com/bblanchon/ArduinoJson</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"InstagramStats.h"</span>         <span class="hljs-comment">// https://github.com/witnessmenow/arduino-instagram-stats</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">"JsonStreamingParser.h"</span>    <span class="hljs-comment">// https://github.com/squix78/json-streaming-parser</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFiClientSecure.h&gt;</span></span>
+                
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NTP_OFFSET  +2  * 60 * 60       <span class="hljs-comment">// segundos</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NTP_INTERVAL 60 * 1000          <span class="hljs-comment">// milissegundos</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> NTP_ADDRESS  <span class="hljs-meta-string">"0.pool.ntp.org"</span>   <span class="hljs-comment">// Url NTP</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SDA_PIN 5                       <span class="hljs-comment">// GPIO5 -&gt; SDA</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SCL_PIN 4                       <span class="hljs-comment">// GPIO4 -&gt; SCL</span></span>
+                <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> SSD_ADDRESS 0x3c                <span class="hljs-comment">// i2c</span></span>
+                
+                <span class="hljs-keyword">char</span> <span class="hljs-keyword">string</span>[<span class="hljs-number">25</span>];
+                
+                <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* ssid       = <span class="hljs-string">"Your-WIFI-SSID"</span>;
+                <span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* password   = <span class="hljs-string">"Your-WIFI-Password"</span>;
+                
+                <span class="hljs-keyword">String</span> formattedTime;
+                <span class="hljs-keyword">String</span> ipStr;
+                <span class="hljs-keyword">String</span> <span class="hljs-built_in">text</span>;
+                
+                <span class="hljs-built_in">WiFiUDP</span> ntpUDP;
+                NTPClient timeClient(ntpUDP, NTP_ADDRESS, NTP_OFFSET, NTP_INTERVAL);
+                SSD1306  <span class="hljs-built_in">display</span>(SSD_ADDRESS, SDA_PIN, SCL_PIN);
+                
+                WiFiClientSecure secureClient;
+                <span class="hljs-built_in">WiFiClient</span> client;
+                
+                InstagramStats instaStats(secureClient);
+                
+                <span class="hljs-keyword">String</span> userName = <span class="hljs-string">"Your-INSTAGRAM-username"</span>;
+                <span class="hljs-keyword">String</span> stats;
+                
+                <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> api_delay = <span class="hljs-number">1</span> * <span class="hljs-number">60000</span>; <span class="hljs-comment">//time between api requests (1mins)</span>
+                <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> api_due_time;
+                
+                <span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() 
+                {
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">""</span>);
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"ESP32 Instagram Stats"</span>);
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">""</span>);
+                
+                  <span class="hljs-built_in">display</span>.init();
+                <span class="hljs-comment">//  display.flipScreenVertically();</span>
+                  <span class="hljs-built_in">display</span>.setTextAlignment(TEXT_ALIGN_LEFT);
+                  <span class="hljs-built_in">display</span>.setFont(ArialMT_Plain_10);
+                
+                  connectWiFi();
+                  timeClient.<span class="hljs-built_in">begin</span>();
+                  InstagramUserStats response = instaStats.getUserStats(userName);
+                  <span class="hljs-built_in">text</span> = (<span class="hljs-keyword">String</span>) response.followedByCount;
+                }
+                
+                <span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>() 
+                {
+                  timeClient.update();
+                  formattedTime = timeClient.getFormattedTime();
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"TIME: "</span>);
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(formattedTime);
+                  <span class="hljs-built_in">if</span>(timeClient.getMinutes() == <span class="hljs-number">00</span>)   <span class="hljs-comment">//updates every hour.</span>
+                  {
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"The number of Instagram followers of user "</span> + userName + <span class="hljs-string">" is: "</span>);
+                    InstagramUserStats response = instaStats.getUserStats(userName);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(response.followedByCount);
+                    <span class="hljs-built_in">text</span> = (<span class="hljs-keyword">String</span>) response.followedByCount;
+                  }
+                  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">clear</span>();
+                  <span class="hljs-built_in">display</span>.setFont(ArialMT_Plain_24);
+                  <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">17</span>, <span class="hljs-number">0</span>,  formattedTime);
+                  <span class="hljs-built_in">display</span>.setFont(ArialMT_Plain_10);
+                  <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">0</span>, <span class="hljs-number">25</span>,  <span class="hljs-string">"Instagram: "</span>);
+                  <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">60</span>, <span class="hljs-number">25</span>,  userName);
+                  <span class="hljs-built_in">display</span>.setFont(ArialMT_Plain_24);
+                  <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">40</span>, <span class="hljs-number">35</span>,  <span class="hljs-built_in">text</span>);
+                  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>();
+                  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+                }
+                
+                <span class="hljs-keyword">void</span> connectWiFi(<span class="hljs-keyword">void</span>)
+                {
+                  <span class="hljs-keyword">int</span> i;
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>();
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Connecting to: "</span>);
+                  <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(ssid);
+                  <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">2</span>, <span class="hljs-number">10</span>, <span class="hljs-string">"Connected to: "</span>);
+                  <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">1</span>, <span class="hljs-number">25</span>, <span class="hljs-keyword">String</span>(ssid));
+                  <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>();
+                  <span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">begin</span>(ssid, password);
+                  <span class="hljs-built_in">while</span> ((<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED) &amp;&amp; i &lt; <span class="hljs-number">100</span>)
+                  {
+                    i ++;
+                    <span class="hljs-built_in">delay</span>(<span class="hljs-number">500</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"."</span>);
+                    <span class="hljs-built_in">display</span>.drawString((<span class="hljs-number">3</span> + i * <span class="hljs-number">2</span>), <span class="hljs-number">35</span>, <span class="hljs-string">"."</span> );
+                    <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>();
+                  }
+                  <span class="hljs-built_in">if</span> ( <span class="hljs-built_in">WiFi</span>.status() == WL_CONNECTED)
+                  {
+                    <span class="hljs-built_in">IPAddress</span> ip = <span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">localIP</span>();
+                    ipStr = <span class="hljs-keyword">String</span>(ip[<span class="hljs-number">0</span>]) + <span class="hljs-string">'.'</span> + <span class="hljs-keyword">String</span>(ip[<span class="hljs-number">1</span>]) + <span class="hljs-string">'.'</span> + <span class="hljs-keyword">String</span>(ip[<span class="hljs-number">2</span>]) + <span class="hljs-string">'.'</span> + <span class="hljs-keyword">String</span>(ip[<span class="hljs-number">3</span>]);
+                    <span class="hljs-built_in">display</span>.<span class="hljs-built_in">clear</span>();
+                    <span class="hljs-built_in">display</span>.setFont(ArialMT_Plain_16);
+                    <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-string">"WiFi Connected!"</span>);
+                    <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">0</span>, <span class="hljs-number">25</span>, ipStr);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">""</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"WiFi Connedcted."</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"IP address: "</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">localIP</span>());
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Subnet Mask: "</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">subnetMask</span>());
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Gateway: "</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">gatewayIP</span>());
+                    <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>();
+                  }
+                  <span class="hljs-built_in">else</span>
+                  {
+                    ipStr = <span class="hljs-string">"NOT CONNECTED"</span>;
+                    <span class="hljs-built_in">display</span>.<span class="hljs-built_in">clear</span>();
+                    <span class="hljs-built_in">display</span>.setFont(ArialMT_Plain_16);
+                    <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>,  <span class="hljs-string">"WiFi not connected."</span>);
+                    <span class="hljs-built_in">display</span>.drawString(<span class="hljs-number">0</span>, <span class="hljs-number">25</span>, ipStr);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">""</span>);
+                    <span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"WiFi not connected."</span>);
+                    <span class="hljs-built_in">display</span>.<span class="hljs-built_in">display</span>();
+                  }
+                  <span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+                }
+                </code></pre><h2 id="follow-up-problem-statement">Follow up Problem Statement</h2>
+                <ul>
+                <li>Try displaying twitter tweets on OLED display or the current song you are listening to in spotify</li>
+                </ul>
+                <h2 id="references">References</h2>
+                <ul>
+                <li><a href="https://www.hackster.io/user742153/instagram-followers-counter-with-esp32-and-oled-display-a143ad">https://www.hackster.io/user742153/instagram-followers-counter-with-esp32-and-oled-display-a143ad</a></li>
+                <li><a href="https://github.com/andrei7c4/espspotifydisplay/">https://github.com/andrei7c4/espspotifydisplay/</a></li>
+                <li><a href="https://hackaday.io/project/25359-esp8266-twitter-client">https://hackaday.io/project/25359-esp8266-twitter-client</a></li>
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

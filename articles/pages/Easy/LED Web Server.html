@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                <h1 id="controlling-leds-esp32-webserver">Controlling LEDs - ESP32 Webserver</h1>
+<p>The aim of this project is to create a web server using ESP32 and Arduino IDE to control the inbuilt R, G, B LEDs of Custom Dev Board</p>
+            </div>
+
+            <div class="content">
+
+                
+<h2 id="concept">Concept</h2>
+<p>Web server is nothing but the location where our website files stores and Web server process these files to clients based on the request of a client. HTTP, hypertext transfer
+control is a protocol is used to transfer data between the web client and Web server. 
+After receiving HTTP GET request, the server responds using the web pages. If the Server is down or not available a error 404 message is displayed on the web browser.</p>
+<ul>
+<li>To access ESP32 web pages, its IP address which is assigned to it when it connects a to the internet is required.</li>
+<li>After getting the IP address on serial monitor, paste it in a web browser to get the response from the CUstom Dev Board&#39;s host server.</li>
+</ul>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>Arduino IDE</li>
+</ul>
+<h2 id="components">Components</h2>
+<ul>
+<li>Dev Board</li>
+<li>Jumpers</li>
+</ul>
+<h2 id="schematic">Schematic</h2>
+<ul>
+<li>Connect Pin R -&gt; Pin 15</li>
+<li>Connect Pin G -&gt; Pin 22</li>
+<li>Connect Pin B -&gt; Pin 23</li>
+</ul>
+<h2 id="code-explanation">Code Explanation</h2>
+<ul>
+<li>WiFi module&#39;s library is called WiFi.h. Wifi function is used to connect to the network, and to send and recieve data from the client.
+#include directive will include this pre-installed library in the code.</li>
+<li>Replace the ___ with your WIFI NAME and WIFI PASSWORD. Same network that you want the board to be connected.</li>
+<li>server() will set the port for the WiFiServer at 80 (default)</li>
+</ul>
+<pre><code><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;WiFi.h&gt;</span></span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* WIFI_NAME= <span class="hljs-string">"___"</span>; 
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* WIFI_PASSWORD = <span class="hljs-string">"___"</span>; 
+<span class="hljs-function">WiFiServer <span class="hljs-title">server</span><span class="hljs-params">(<span class="hljs-number">80</span>)</span></span>;
+</code></pre><p>Initially LEDs are set to a state off and GPIO pins 15, 22, 23 are initialized to access the LEDs later in the code.</p>
+<pre><code><span class="hljs-keyword">String</span> header;
+
+<span class="hljs-keyword">String</span> LED_ONE_STATE = <span class="hljs-string">"off"</span>;
+<span class="hljs-keyword">String</span> LED_TWO_STATE = <span class="hljs-string">"off"</span>;
+<span class="hljs-keyword">String</span> LED_THREE_STATE = <span class="hljs-string">"off"</span>;
+
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> G_22 = <span class="hljs-number">22</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> B_23 = <span class="hljs-number">23</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> R_15 = <span class="hljs-number">15</span>;
+</code></pre><p>Baud rate of ‘serial.begin’ function is initialized at the rate of 115200 bits per second. GPIO pins are set as digital output using pinMode()
+function and digitalWrite() function is used to set them at a LOW state.</p>
+<pre><code><span class="hljs-keyword">void</span> <span class="hljs-built_in">setup</span>() {
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">begin</span>(<span class="hljs-number">115200</span>);
+<span class="hljs-built_in">pinMode</span>(G_22, <span class="hljs-literal">OUTPUT</span>);
+<span class="hljs-built_in">pinMode</span>(B_23, <span class="hljs-literal">OUTPUT</span>);
+<span class="hljs-built_in">pinMode</span>(R_15, <span class="hljs-literal">OUTPUT</span>);
+
+<span class="hljs-built_in">digitalWrite</span>(G_22, <span class="hljs-literal">LOW</span>);
+<span class="hljs-built_in">digitalWrite</span>(B_23, <span class="hljs-literal">LOW</span>);
+<span class="hljs-built_in">digitalWrite</span>(R_15, <span class="hljs-literal">LOW</span>);
+</code></pre><p>The code at this part is pretty much self-explanatory. This is written to connect it to WiFi</p>
+<pre><code><span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Connecting to "</span>);
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(WIFI_NAME);
+<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">begin</span>(WIFI_NAME, WIFI_PASSWORD);
+<span class="hljs-built_in">while</span> (<span class="hljs-built_in">WiFi</span>.status() != WL_CONNECTED) {
+<span class="hljs-built_in">delay</span>(<span class="hljs-number">1000</span>);
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">print</span>(<span class="hljs-string">"Trying to connect to Wifi Network"</span>);
+}
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">""</span>);
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Successfully connected to WiFi network"</span>);
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"IP address: "</span>);
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-built_in">WiFi</span>.<span class="hljs-built_in">localIP</span>());
+server.<span class="hljs-built_in">begin</span>();
+}
+</code></pre><p>Main loop services the web page to the client and receives data through HTTP get request about the status of GPIO pins. 
+If the client request is available, server.avaialble () function stores logical one value in variable client.</p>
+<p>Now if the client request is available, These statements will start receiving data from the client and stores the data in header string 
+and will continue receiving data until ‘\n’  is not found which means client has disconnected.</p>
+<pre><code><span class="hljs-keyword">void</span> <span class="hljs-built_in">loop</span>(){
+<span class="hljs-built_in">WiFiClient</span> client = server.<span class="hljs-built_in">available</span>(); 
+<span class="hljs-built_in">if</span> (client) { 
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"New Client is requesting web page"</span>); 
+<span class="hljs-keyword">String</span> current_data_line = <span class="hljs-string">""</span>; 
+<span class="hljs-built_in">while</span> (client.<span class="hljs-built_in">connected</span>()) { 
+<span class="hljs-built_in">if</span> (client.<span class="hljs-built_in">available</span>()) { 
+<span class="hljs-keyword">char</span> new_byte = client.<span class="hljs-built_in">read</span>(); 
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">write</span>(new_byte); 
+header += new_byte;
+<span class="hljs-built_in">if</span> (new_byte == <span class="hljs-string">'\n'</span>) { 
+
+<span class="hljs-built_in">if</span> (current_data_line.length() == <span class="hljs-number">0</span>) 
+{
+
+client.<span class="hljs-built_in">println</span>(<span class="hljs-string">"HTTP/1.1 200 OK"</span>);
+client.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Content-type:text/html"</span>);
+client.<span class="hljs-built_in">println</span>(<span class="hljs-string">"Connection: close"</span>);
+client.<span class="hljs-built_in">println</span>();
+</code></pre><p>This part of the loop involves multiple conditional statements to control the different LEDs.</p>
+<pre><code>
+<span class="hljs-built_in">if</span> (header.indexOf(<span class="hljs-string">"LED0=ON"</span>) != <span class="hljs-number">-1</span>) 
+{
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"G LED is ON"</span>);
+LED_ONE_STATE = <span class="hljs-string">"on"</span>;
+<span class="hljs-built_in">digitalWrite</span>(G_22, <span class="hljs-literal">HIGH</span>);
+} 
+<span class="hljs-built_in">if</span> (header.indexOf(<span class="hljs-string">"LED0=OFF"</span>) != <span class="hljs-number">-1</span>) 
+{
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"G LED is OFF"</span>);
+LED_ONE_STATE = <span class="hljs-string">"off"</span>;
+<span class="hljs-built_in">digitalWrite</span>(G_22, <span class="hljs-literal">LOW</span>);
+} 
+<span class="hljs-built_in">if</span> (header.indexOf(<span class="hljs-string">"LED1=ON"</span>) != <span class="hljs-number">-1</span>)
+{
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"B LED is ON"</span>);
+LED_TWO_STATE = <span class="hljs-string">"on"</span>;
+<span class="hljs-built_in">digitalWrite</span>(B_23, <span class="hljs-literal">HIGH</span>);
+}
+<span class="hljs-built_in">if</span> (header.indexOf(<span class="hljs-string">"LED1=OFF"</span>) != <span class="hljs-number">-1</span>) 
+{
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"B LED is OFF"</span>);
+LED_TWO_STATE = <span class="hljs-string">"off"</span>;
+<span class="hljs-built_in">digitalWrite</span>(B_23, <span class="hljs-literal">LOW</span>);
+}
+<span class="hljs-built_in">if</span> (header.indexOf(<span class="hljs-string">"LED2=ON"</span>) != <span class="hljs-number">-1</span>) 
+{
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"R LED is ON"</span>);
+LED_THREE_STATE = <span class="hljs-string">"on"</span>;
+<span class="hljs-built_in">digitalWrite</span>(R_15, <span class="hljs-literal">HIGH</span>);
+}
+<span class="hljs-built_in">if</span>(header.indexOf(<span class="hljs-string">"LED2=OFF"</span>) != <span class="hljs-number">-1</span>) {
+<span class="hljs-built_in">Serial</span>.<span class="hljs-built_in">println</span>(<span class="hljs-string">"R LED is OFF"</span>);
+LED_THREE_STATE = <span class="hljs-string">"off"</span>;
+<span class="hljs-built_in">digitalWrite</span>(R_15, <span class="hljs-literal">LOW</span>);
+}
+</code></pre><p>Displaying HTML on web server
+This is to display HTML and CSS code to the web browser. 
+client.println () function is used to send HTML and CSS commands to the client who is accessing a web server through the IP address. </p>
+<pre><code>
+client.println("<span class="hljs-meta">&lt;!DOCTYPE html&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">viewport</span>\" <span class="hljs-attr">content</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">width</span>=<span class="hljs-string">device-width,</span> <span class="hljs-attr">initial-scale</span>=<span class="hljs-string">1\</span>"&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">icon</span>\" <span class="hljs-attr">href</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">data:</span>,\"&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="undefined">html { font-family: Helvetica; display: inline-block; margin: 0px auto; text-align: center;}");
+client.println(".button { background-color: #4CAF50; border: 2px solid #4CAF50;; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; }");
+client.println("text-decoration: none; font-size: 30px; margin: 2px; cursor: pointer;}"); 
+// Web Page Heading
+client.println("</span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>ESP32 Web server LED controlling example<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Web Server Example Microcontrollerslab.com<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span>" );
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>Press on button to turn on led and off button to turn off LED<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> LED one is " + LED_ONE_STATE + "<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>");
+// If the PIN_NUMBER_22State is off, it displays the ON button 
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">button</span>\" <span class="hljs-attr">name</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">LED0</span>\" <span class="hljs-attr">value</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">ON</span>\" <span class="hljs-attr">type</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">submit</span>\"&gt;</span>LED0 ON<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>") ;
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">button</span>\" <span class="hljs-attr">name</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">LED0</span>\" <span class="hljs-attr">value</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">OFF</span>\" <span class="hljs-attr">type</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">submit</span>\"&gt;</span>LED0 OFF<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>LED two is " + LED_TWO_STATE + "<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">button</span>\" <span class="hljs-attr">name</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">LED1</span>\" <span class="hljs-attr">value</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">ON</span>\" <span class="hljs-attr">type</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">submit</span>\"&gt;</span>LED1 ON<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">button</span>\" <span class="hljs-attr">name</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">LED1</span>\" <span class="hljs-attr">value</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">OFF</span>\" <span class="hljs-attr">type</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">submit</span>\"&gt;</span>LED1 OFF<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>LED three is " + LED_THREE_STATE + "<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>");
+client.println ("<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">button</span>\" <span class="hljs-attr">name</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">LED2</span>\" <span class="hljs-attr">value</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">ON</span>\" <span class="hljs-attr">type</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">submit</span>\"&gt;</span>LED2 ON<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>");
+client.println ("<span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">button</span>\" <span class="hljs-attr">name</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">LED2</span>\" <span class="hljs-attr">value</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">OFF</span>\" <span class="hljs-attr">type</span>=<span class="hljs-string">\</span>"<span class="hljs-attr">submit</span>\"&gt;</span>LED2 OFF<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span>");
+client.println("<span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>");
+client.println();
+break;
+} 
+else 
+{ 
+current_data_line = "";
+}
+} 
+else if (new_byte != '\r') 
+{ 
+current_data_line += new_byte; 
+}
+}
+}
+// Clear the header variable
+header = "";
+// Close the connection
+client.stop();
+Serial.println("Client disconnected.");
+Serial.println("");
+}
+}
+</code></pre><h2 id="follow-up-problem-statement">Follow up Problem Statement</h2>
+<p>Try to implement a controller that can control the brightness of the LED through a webserver.</p>
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://microcontrollerslab.com/esp32-web-server-arduino-led/">ESP32 Web server in Arduino IDE: Controlling LEDs</a></li>
+<li><a href="https://randomnerdtutorials.com/esp32-web-server-slider-pwm/">ESP32 Web server</a></li>
+</ul>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

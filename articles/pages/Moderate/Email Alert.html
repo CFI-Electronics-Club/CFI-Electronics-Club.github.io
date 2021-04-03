@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Electronics Club, IIT Madras</title>
+    <link rel="icon" href="../../../images/elec.png">
+    <link rel="stylesheet" href="../../../css/articles_light.css" />
+    <link rel="stylesheet" href="../../../css/articles.css" />
+    <link rel="stylesheet" href="../../../css/checkbox.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"
+        integrity="sha384-LTIDeidl25h2dPxrB2Ekgc9c7sEC3CWGM6HeFmuDNUjX76Ert4Z4IY714dhZHPLd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles.css">
+
+</head>
+
+<body>
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <div>
+            <a href="#menu" id="menuLink" class="menu-link active">
+                <!-- Hamburger icon -->
+                <span></span>
+            </a>
+            <div style='position: fixed; right: 10px;'>
+                <img src="https://img.icons8.com/doodle/48/000000/sun--v1.png" style="width:35px" />
+
+                <label class="switch" style="top: -10px">
+                    <input type="checkbox" id='checkbox' checked onclick="toggleTheme()">
+                    <span class="slider round"></span>
+                </label>
+                <img src="https://img.icons8.com/plasticine/100/000000/crescent-moon.png" style="width:35px" />
+            </div>
+        </div>
+
+        <div id="menu" style='font-family: "Archivo Black", "sans-serif"; background-color: #1a1a2e;'>
+            <div class="pure-menu">
+                <a class="pure-menu-heading"
+                    style='padding: 20px 0; background-color: #1a1a2e; text-align: center; display: flex; align-items: center; font-family: "Archivo Black", sans-serif;text-decoration: none; '
+                    href="../../../index.html">
+                    <img src="../../../images/elec.png" alt="" style='width: 100px'>
+                    Electronics <br> Club
+                </a>
+
+                <ul class="pure-menu-list">
+                    <li class=""><a href="../Getting Started.html" class="pure-menu-link">Getting Started</a></li>
+                    <ul class="pure-menu-list">
+                        <label for="drop" class="toggle" style="padding-left: 10px;">Basics</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Arduino Installation.html" style="padding-left:20px" class="pure-menu-link">Arduino Installation</a>
+                            </li>
+                            <li class="">
+                                <a href="Fundamentals.html" style="padding-left:20px" class="pure-menu-link">Fundamentals</a>
+                            </li>
+                            <li class="">
+                                <a href="Analog vs Digital.html" style="padding-left:20px" class="pure-menu-link">Analog vs Digital</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Pulse Width Modulation.html" style="padding-left:20px" class="pure-menu-link">Pulse Width Modulation</a>
+                            </li>
+                            <li class="">
+                                <a href="Push buttons.html" style="padding-left:20px" class="pure-menu-link">Push buttons</a>
+                            </li>
+                            <li class="">
+                                <a href="Capactive Touch Pins.html" style="padding-left:20px" class="pure-menu-link">Capactive Touch Pins</a>
+                            </li>
+                            <li class="">
+                                <a href="PullUp-Down Resistors.html" style="padding-left:20px" class="pure-menu-link">Pull Up/Down Resistors</a>
+                            </li><li class="">
+                                <a href="Serial Bluetooth.html" style="padding-left:20px" class="pure-menu-link">Serial Bluetooth</a>
+                            </li><li class="">
+                                <a href="Communication Protocols.html" style="padding-left:20px" class="pure-menu-link">Communication Protocols</a>
+                            </li><li class="">
+                                <a href="MicroPython Installation.html" style="padding-left:20px" class="pure-menu-link">MicroPython Installation</a>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="pure-menu-list">
+                        <label for="drop1" class="toggle" style="padding-left: 10px;">Easy projects</label>
+                        <input type="checkbox" id="drop1" />
+                        <ul class="pure-menu-item menu">
+                            <li class="">
+                                <a href="Bluetooth Keyboard.html" style="padding-left:20px" class="pure-menu-link">Bluetooth Keyboard</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Cloud Server.html" class="pure-menu-link">Cloud Server</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Deep Sleep.html" class="pure-menu-link">Deep Sleep</a>
+                            </li>
+                            <li class="">
+                                <a href="Dual Core Processing.html" style="padding-left:20px" class="pure-menu-link">Dual Core Processing</a>
+                            </li>
+                            <li class="">
+                                <a href="LDR sensor.html" style="padding-left:20px" class="pure-menu-link">LDR sensor</a>
+                            </li>
+                            <li class="">
+                                <a href="LED Web Server.html" style="padding-left:20px" class="pure-menu-link">LED Web Server</a>
+                            </li>
+                            <li class="">
+                                <a href="NeoPixel LED Control.html" style="padding-left:20px" class="pure-menu-link">NeoPixel LED Control</a>
+                            </li><li class="">
+                                <a href="OLED display.html" style="padding-left:20px" class="pure-menu-link">OLED display</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Realtime clock.html" style="padding-left:20px" class="pure-menu-link">Realtime clock</a>
+                            </li>
+                            
+                            <li class="">
+                                <a href="Web Server Game.html" style="padding-left:20px" class="pure-menu-link">Web Server Game</a>
+                            </li>
+
+                            
+                        </ul>
+                        <label for="drop2" class="toggle" style="padding-left: 10px;">Moderate or Difficult projects</label>
+                        <input type="checkbox" id="drop2" />
+                        <ul class="pure-menu-item menu">
+
+                            <li class=""><a style="padding-left:20px" href="BLE Control.html" class="pure-menu-link">BLE Control</a>
+                            </li>
+                            <li class="">
+                                <a href="Email Alert.html" style="padding-left:20px" class="pure-menu-link">Email Alert</a>
+                            </li>
+                           
+                            <li class=""><a href="FlappyBird.html" style="padding-left:20px"
+                                class="pure-menu-link">FlappyBird</a></li>
+                           
+                            <li class=""><a style="padding-left:20px" href="Instagram Follower Counter.html" class="pure-menu-link">Instagram Follower Counter</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Joystick.html" class="pure-menu-link">Joystick</a>
+                            </li>
+                            <li class=""><a style="padding-left:20px" href="Pulse Oximeter.html" class="pure-menu-link">Pulse Oximeter</a>
+                            </li>
+                           
+                                
+                                <li class=""><a style="padding-left:20px" href="Telegram-Motion detection.html" class="pure-menu-link">Telegram-Motion detection</a>
+                                </li>
+                                <li class=""><a style="padding-left:20px" href="Telegram-RGB.html" class="pure-menu-link">Telegram-RGB</a>
+                                </li>
+                        </ul>
+
+                    </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="header">
+                
+                <h1 id="email-alert-based-on-temperature-threshold">Email Alert Based on Temperature Threshold</h1>
+<p>In this project, we will send an email alert with the ESP32 based on a temperature threshold. The ESP32 also hosts a Web Server that shows the latest sensor readings and input fields to change the threshold value, email’s recipient, and the option to arm or disarm the system.</p>
+            </div>
+
+            <div class="content">
+<img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Moderate%20or%20Difficult%20Projects/Images/ESP32-Email-notification-with-temperature-threshold.png" alt="">
+<h2 id="suggested-reading-material">Suggested Reading Material</h2>
+<ul>
+<li><a href="https://randomnerdtutorials.com/esp32-send-email-smtp-server-arduino-ide/">ESP32 Send Emails using an SMTP Server: HTML, Text and Attachments (Arduino IDE)</a></li>
+<li><a href="https://randomnerdtutorials.com/esp32-esp8266-input-data-html-form/">Input Data on HTML Form ESP32/ESP8266 Web Server using Arduino IDE</a></li>
+<li><a href="https://randomnerdtutorials.com/esp32-esp8266-thermostat-web-server/">ESP32/ESP8266 Thermostat Web Server – Control Output Based on Temperature</a></li>
+</ul>
+<h2 id="required-libraries">Required Libraries</h2>
+<ul>
+<li>ESP32 Mail Client Libraries</li>
+<li>DS18B20</li>
+</ul>
+<h2 id="required-components">Required Components</h2>
+<ul>
+<li>Dev Board</li>
+<li>DS18B20 Temperature Sensor</li>
+<li>Resistors</li>
+<li>Wires</li>
+<li>Breadboard</li>
+</ul>
+<h2 id="schematic">Schematic</h2>
+<p><img src="https://github.com/CFI-Electronics-Club/Dev-Board-Documentation/blob/main/Moderate%20or%20Difficult%20Projects/Images/email_alert.png?raw=true" alt=""></p>
+<h2 id="code">Code</h2>
+<pre><code>#include &lt;WiFi.h&gt;
+#include &lt;AsyncTCP.h&gt;
+#include &lt;ESPAsyncWebServer.h&gt;
+#include &lt;OneWire.h&gt;
+#include &lt;DallasTemperature.h&gt;
+#include <span class="hljs-string">"ESP32_MailClient.h"</span>
+
+<span class="hljs-comment">// REPLACE WITH YOUR NETWORK CREDENTIALS</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* ssid = <span class="hljs-string">"REPLACE_WITH_YOUR_SSID"</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* password = <span class="hljs-string">"REPLACE_WITH_YOUR_PASSWORD"</span>;
+
+<span class="hljs-comment">// To send Email using Gmail use port 465 (SSL) and SMTP Server smtp.gmail.com</span>
+<span class="hljs-comment">// YOU MUST ENABLE less secure app option https://myaccount.google.com/lesssecureapps?pli=1</span>
+#define emailSenderAccount    <span class="hljs-string">"example_sender_account@gmail.com"</span>
+#define emailSenderPassword   <span class="hljs-string">"email_sender_password"</span>
+#define smtpServer            <span class="hljs-string">"smtp.gmail.com"</span>
+#define smtpServerPort        <span class="hljs-number">465</span>
+#define emailSubject          <span class="hljs-string">"[ALERT] ESP32 Temperature"</span>
+
+<span class="hljs-comment">// Default Recipient Email Address</span>
+<span class="hljs-built_in">String</span> inputMessage = <span class="hljs-string">"your_email_recipient@gmail.com"</span>;
+<span class="hljs-built_in">String</span> enableEmailChecked = <span class="hljs-string">"checked"</span>;
+<span class="hljs-built_in">String</span> inputMessage2 = <span class="hljs-string">"true"</span>;
+<span class="hljs-comment">// Default Threshold Temperature Value</span>
+<span class="hljs-built_in">String</span> inputMessage3 = <span class="hljs-string">"25.0"</span>;
+<span class="hljs-built_in">String</span> lastTemperature;
+
+<span class="hljs-comment">// HTML web page to handle 3 input fields (email_input, enable_email_input, threshold_input)</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> index_html[] PROGMEM = R<span class="hljs-string">"rawliteral(
+&lt;!DOCTYPE HTML&gt;&lt;html&gt;&lt;head&gt;
+  &lt;title&gt;Email Notification with Temperature&lt;/title&gt;
+  &lt;meta name="</span>viewport<span class="hljs-string">" content="</span>width=device-width, initial-scale=<span class="hljs-number">1</span><span class="hljs-string">"&gt;
+  &lt;/head&gt;&lt;body&gt;
+  &lt;h2&gt;DS18B20 Temperature&lt;/h2&gt; 
+  &lt;h3&gt;%TEMPERATURE% &amp;deg;C&lt;/h3&gt;
+  &lt;h2&gt;ESP Email Notification&lt;/h2&gt;
+  &lt;form action="</span>/get<span class="hljs-string">"&gt;
+    Email Address &lt;input type="</span>email<span class="hljs-string">" name="</span>email_input<span class="hljs-string">" value="</span>%EMAIL_INPUT%<span class="hljs-string">" required&gt;&lt;br&gt;
+    Enable Email Notification &lt;input type="</span>checkbox<span class="hljs-string">" name="</span>enable_email_input<span class="hljs-string">" value="</span><span class="hljs-literal">true</span><span class="hljs-string">" %ENABLE_EMAIL%&gt;&lt;br&gt;
+    Temperature Threshold &lt;input type="</span>numbe<span class="hljs-string">r" step="</span><span class="hljs-number">0.1</span><span class="hljs-string">" name="</span>threshold_input<span class="hljs-string">" value="</span>%THRESHOLD%<span class="hljs-string">" required&gt;&lt;br&gt;
+    &lt;input type="</span>submit<span class="hljs-string">" value="</span>Submit<span class="hljs-string">"&gt;
+  &lt;/form&gt;
+&lt;/body&gt;&lt;/html&gt;)rawliteral"</span>;
+
+void notFound(AsyncWebServerRequest *request) {
+  request-&gt;send(<span class="hljs-number">404</span>, <span class="hljs-string">"text/plain"</span>, <span class="hljs-string">"Not found"</span>);
+}
+
+AsyncWebServer server(<span class="hljs-number">80</span>);
+
+<span class="hljs-comment">// Replaces placeholder with DS18B20 values</span>
+<span class="hljs-built_in">String</span> processor(<span class="hljs-keyword">const</span> <span class="hljs-built_in">String</span>&amp; var){
+  <span class="hljs-comment">//Serial.println(var);</span>
+  <span class="hljs-keyword">if</span>(var == <span class="hljs-string">"TEMPERATURE"</span>){
+    <span class="hljs-keyword">return</span> lastTemperature;
+  }
+  <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(var == <span class="hljs-string">"EMAIL_INPUT"</span>){
+    <span class="hljs-keyword">return</span> inputMessage;
+  }
+  <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(var == <span class="hljs-string">"ENABLE_EMAIL"</span>){
+    <span class="hljs-keyword">return</span> enableEmailChecked;
+  }
+  <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>(var == <span class="hljs-string">"THRESHOLD"</span>){
+    <span class="hljs-keyword">return</span> inputMessage3;
+  }
+  <span class="hljs-keyword">return</span> <span class="hljs-built_in">String</span>();
+}
+
+<span class="hljs-comment">// Flag variable to keep track if email notification was sent or not</span>
+<span class="hljs-keyword">bool</span> emailSent = <span class="hljs-literal">false</span>;
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* PARAM_INPUT_1 = <span class="hljs-string">"email_input"</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* PARAM_INPUT_2 = <span class="hljs-string">"enable_email_input"</span>;
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span>* PARAM_INPUT_3 = <span class="hljs-string">"threshold_input"</span>;
+
+<span class="hljs-comment">// Interval between sensor readings. Learn more about timers: https://RandomNerdTutorials.com/esp32-pir-motion-sensor-interrupts-timers/</span>
+unsigned long previousMillis = <span class="hljs-number">0</span>;     
+<span class="hljs-keyword">const</span> long interval = <span class="hljs-number">5000</span>;    
+
+<span class="hljs-comment">// GPIO where the DS18B20 is connected to</span>
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> oneWireBus = <span class="hljs-number">4</span>;     
+<span class="hljs-comment">// Setup a oneWire instance to communicate with any OneWire devices</span>
+OneWire oneWire(oneWireBus);
+<span class="hljs-comment">// Pass our oneWire reference to Dallas Temperature sensor </span>
+DallasTemperature sensors(&amp;oneWire);
+
+<span class="hljs-comment">// The Email Sending data object contains config and data to send</span>
+SMTPData smtpData;
+
+void setup() {
+  Serial.begin(<span class="hljs-number">115200</span>);
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(ssid, password);
+  <span class="hljs-keyword">if</span> (WiFi.waitForConnectResult() != WL_CONNECTED) {
+    Serial.println(<span class="hljs-string">"WiFi Failed!"</span>);
+    <span class="hljs-keyword">return</span>;
+  }
+  Serial.println();
+  Serial.print(<span class="hljs-string">"ESP IP Address: http://"</span>);
+  Serial.println(WiFi.localIP());
+
+  <span class="hljs-comment">// Start the DS18B20 sensor</span>
+  sensors.begin();
+
+  <span class="hljs-comment">// Send web page to client</span>
+  server.on(<span class="hljs-string">"/"</span>, HTTP_GET, [](AsyncWebServerRequest *request){
+    request-&gt;send_P(<span class="hljs-number">200</span>, <span class="hljs-string">"text/html"</span>, index_html, processor);
+  });
+
+  <span class="hljs-comment">// Receive an HTTP GET request at &lt;ESP_IP&gt;/get?email_input=&lt;inputMessage&gt;&amp;enable_email_input=&lt;inputMessage2&gt;&amp;threshold_input=&lt;inputMessage3&gt;</span>
+  server.on(<span class="hljs-string">"/get"</span>, HTTP_GET, [] (AsyncWebServerRequest *request) {
+    <span class="hljs-comment">// GET email_input value on &lt;ESP_IP&gt;/get?email_input=&lt;inputMessage&gt;</span>
+    <span class="hljs-keyword">if</span> (request-&gt;hasParam(PARAM_INPUT_1)) {
+      inputMessage = request-&gt;getParam(PARAM_INPUT_1)-&gt;value();
+      <span class="hljs-comment">// GET enable_email_input value on &lt;ESP_IP&gt;/get?enable_email_input=&lt;inputMessage2&gt;</span>
+      <span class="hljs-keyword">if</span> (request-&gt;hasParam(PARAM_INPUT_2)) {
+        inputMessage2 = request-&gt;getParam(PARAM_INPUT_2)-&gt;value();
+        enableEmailChecked = <span class="hljs-string">"checked"</span>;
+      }
+      <span class="hljs-keyword">else</span> {
+        inputMessage2 = <span class="hljs-string">"false"</span>;
+        enableEmailChecked = <span class="hljs-string">""</span>;
+      }
+      <span class="hljs-comment">// GET threshold_input value on &lt;ESP_IP&gt;/get?threshold_input=&lt;inputMessage3&gt;</span>
+      <span class="hljs-keyword">if</span> (request-&gt;hasParam(PARAM_INPUT_3)) {
+        inputMessage3 = request-&gt;getParam(PARAM_INPUT_3)-&gt;value();
+      }
+    }
+    <span class="hljs-keyword">else</span> {
+      inputMessage = <span class="hljs-string">"No message sent"</span>;
+    }
+    Serial.println(inputMessage);
+    Serial.println(inputMessage2);
+    Serial.println(inputMessage3);
+    request-&gt;send(<span class="hljs-number">200</span>, <span class="hljs-string">"text/html"</span>, <span class="hljs-string">"HTTP GET request sent to your ESP.&lt;br&gt;&lt;a href=\"/\"&gt;Return to Home Page&lt;/a&gt;"</span>);
+  });
+  server.onNotFound(notFound);
+  server.begin();
+}
+
+void <span class="hljs-keyword">loop</span>() {
+  unsigned long currentMillis = millis();
+  <span class="hljs-keyword">if</span> (currentMillis - previousMillis &gt;= interval) {
+    previousMillis = currentMillis;
+    sensors.requestTemperatures();
+    <span class="hljs-comment">// Temperature in Celsius degrees </span>
+    <span class="hljs-keyword">float</span> temperature = sensors.getTempCByIndex(<span class="hljs-number">0</span>);
+    Serial.print(temperature);
+    Serial.println(<span class="hljs-string">" *C"</span>);
+
+    <span class="hljs-comment">// Temperature in Fahrenheit degrees</span>
+    <span class="hljs-comment">/*float temperature = sensors.getTempFByIndex(0);
+    SerialMon.print(temperature);
+    SerialMon.println(" *F");*/</span>
+
+    lastTemperature = <span class="hljs-built_in">String</span>(temperature);
+
+    <span class="hljs-comment">// Check if temperature is above threshold and if it needs to send the Email alert</span>
+    <span class="hljs-keyword">if</span>(temperature &gt; inputMessage3.toFloat() &amp;&amp; inputMessage2 == <span class="hljs-string">"true"</span> &amp;&amp; !emailSent){
+      <span class="hljs-built_in">String</span> emailMessage = <span class="hljs-built_in">String</span>(<span class="hljs-string">"Temperature above threshold. Current temperature: "</span>) + 
+                            <span class="hljs-built_in">String</span>(temperature) + <span class="hljs-built_in">String</span>(<span class="hljs-string">"C"</span>);
+      <span class="hljs-keyword">if</span>(sendEmailNotification(emailMessage)) {
+        Serial.println(emailMessage);
+        emailSent = <span class="hljs-literal">true</span>;
+      }
+      <span class="hljs-keyword">else</span> {
+        Serial.println(<span class="hljs-string">"Email failed to send"</span>);
+      }    
+    }
+    <span class="hljs-comment">// Check if temperature is below threshold and if it needs to send the Email alert</span>
+    <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>((temperature &lt; inputMessage3.toFloat()) &amp;&amp; inputMessage2 == <span class="hljs-string">"true"</span> &amp;&amp; emailSent) {
+      <span class="hljs-built_in">String</span> emailMessage = <span class="hljs-built_in">String</span>(<span class="hljs-string">"Temperature below threshold. Current temperature: "</span>) + 
+                            <span class="hljs-built_in">String</span>(temperature) + <span class="hljs-built_in">String</span>(<span class="hljs-string">" C"</span>);
+      <span class="hljs-keyword">if</span>(sendEmailNotification(emailMessage)) {
+        Serial.println(emailMessage);
+        emailSent = <span class="hljs-literal">false</span>;
+      }
+      <span class="hljs-keyword">else</span> {
+        Serial.println(<span class="hljs-string">"Email failed to send"</span>);
+      }
+    }
+  }
+}
+
+<span class="hljs-keyword">bool</span> sendEmailNotification(<span class="hljs-built_in">String</span> emailMessage){
+  <span class="hljs-comment">// Set the SMTP Server Email host, port, account and password</span>
+  smtpData.setLogin(smtpServer, smtpServerPort, emailSenderAccount, emailSenderPassword);
+
+  <span class="hljs-comment">// For library version 1.2.0 and later which STARTTLS protocol was supported,the STARTTLS will be </span>
+  <span class="hljs-comment">// enabled automatically when port 587 was used, or enable it manually using setSTARTTLS function.</span>
+  <span class="hljs-comment">//smtpData.setSTARTTLS(true);</span>
+
+  <span class="hljs-comment">// Set the sender name and Email</span>
+  smtpData.setSender(<span class="hljs-string">"ESP32"</span>, emailSenderAccount);
+
+  <span class="hljs-comment">// Set Email priority or importance High, Normal, Low or 1 to 5 (1 is highest)</span>
+  smtpData.setPriority(<span class="hljs-string">"High"</span>);
+
+  <span class="hljs-comment">// Set the subject</span>
+  smtpData.setSubject(emailSubject);
+
+  <span class="hljs-comment">// Set the message with HTML format</span>
+  smtpData.setMessage(emailMessage, <span class="hljs-literal">true</span>);
+
+  <span class="hljs-comment">// Add recipients</span>
+  smtpData.addRecipient(inputMessage);
+
+  smtpData.setSendCallback(sendCallback);
+
+  <span class="hljs-comment">// Start sending Email, can be set callback function to track the status</span>
+  <span class="hljs-keyword">if</span> (!MailClient.sendMail(smtpData)) {
+    Serial.println(<span class="hljs-string">"Error sending Email, "</span> + MailClient.smtpErrorReason());
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+  }
+  <span class="hljs-comment">// Clear all data from Email object to free memory</span>
+  smtpData.empty();
+  <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>;
+}
+
+<span class="hljs-comment">// Callback function to get the Email sending status</span>
+void sendCallback(SendStatus msg) {
+  <span class="hljs-comment">// Print the current status</span>
+  Serial.println(msg.info());
+
+  <span class="hljs-comment">// Do something when complete</span>
+  <span class="hljs-keyword">if</span> (msg.success()) {
+    Serial.println(<span class="hljs-string">"----------------"</span>);
+  }
+}
+</code></pre><h2 id="references">References</h2>
+<p><a href="https://randomnerdtutorials.com/esp32-email-alert-temperature-threshold/">Random Nerd Tutorials</a></p>
+
+          
+
+            </div>
+        </div>
+    </div>
+    <script src="../articles.js"></script>
+
+    <script src="../ui.js"></script>
+
+</body>
+
+</html>

@@ -22,11 +22,11 @@ function toggleTheme() {
 (function () {
   var check = document.getElementById("checkbox");
 
-  if (localStorage.getItem("theme") === "theme-dark") {
-    setTheme("theme-dark");
-    check.checked = true;
-  } else {
+  if (localStorage.getItem("theme") === "theme-light") {
     setTheme("theme-light");
     check.checked = false;
+  } else {
+    setTheme("theme-dark");
+    check.checked = true;
   }
 })();

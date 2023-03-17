@@ -1,7 +1,5 @@
-/* .container {
-  background-color: antiquewhite !important;
-}
-nav {
+
+/*nav {
   background-color: antiquewhite !important;
 } */
 body {
@@ -30,7 +28,15 @@ body {
   font-family: Futura;
   font-variant: small-caps;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3vw;
+}
+.tagline1{
+  padding:2em;
+  color:white;
+  font-family: Futura;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 1.4vw;
 }
 
 .timeline{
@@ -63,6 +69,15 @@ body {
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   flex:1;
 }
+.about-usb{
+  color:black;
+  padding:2em;
+  padding-top:0.5em;
+  font-size: 1.2em;
+  font-style: normal !important;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  flex:1;
+}
 
 .img-class{
   width:35%;
@@ -72,14 +87,20 @@ body {
 
 }
 
-.row{
-  padding-top:0.5em
+.row-project{
+  border-style: solid;
+  background-color: #e6e6fa;
+  padding-top:0.5em;
+  margin:10px;
+  border-width: 10px;
+  border-color: #d4af37;
 }
 
 .achv-item{
   width:100%;
   display:flex;
 }
+
 
 .achievements{
   width:100%;
@@ -179,22 +200,114 @@ body {
   border-color:#4c74c9;
   margin: 10px; 
 }
+.cont1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+a:link { text-decoration: none; }
 
-.swiper{
-  background-color: white;
+a:visited { text-decoration: none; }
 
-  }
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+.button {
+width: fit-content;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #4c74c9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #1a2b50;
+color:white;
+border: solid;
+border-radius:15px;
+border-color:white;}
+
+.button:active {
+  background-color: #1a3e8e;
+  box-shadow: 0 5px #947ce9;
+  transform: translateY(4px);
+}
+.swiper-slide{
+  display:flex;
+  vertical-align: middle;
+}
+
 
   .board {
     margin: 30px auto;
-    width: 100%;
-    height: 100%;
+    width: 53%;
+    height: 53%;
     max-width: 700px;
     display: flex;
     border-radius: 27px;
     background: linear-gradient(145deg, #1f242c, #242b34);
     box-shadow: 12px 12px 12px #101317, -12px -12px 12px #343d4b;
   }
+  .cont2{
+    position: relative;
+    float: left;
+  }
+  .imag{
+    position: relative;
+    z-index: 900px;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .imagc{
+    position: relative;
+    z-index: 900px;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  .imag img{
+    position: relative;
+  left: -20px;
+  top: -20px;
+  z-index: ;
+  }
+  .imag1{
+    width: 40%;
+    height: 40%;
+    float: right;
+    padding: 5px;
+  }
+  .board1 {
+    margin: 30px auto;
+    width: 53%;
+    height: 53%;
+    max-width: 700px;
+    display: flex;
+    border-radius: 27px;
+    background: linear-gradient(145deg, #1f242c, #242b34);
+    box-shadow: 12px 12px 12px #101317, -12px -12px 12px #343d4b;
+  }
+  .div-img{
+
+  }
+#boar img{
+    transition: transform 10s;
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    background-color: rgb(173, 173, 237);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+#boar:hover{
+    transform:scale(1.2);
+}
 /* .board {
   margin: 10px auto;
   width: 300px;
@@ -257,5 +370,50 @@ ul,
 ol {
   color: white;
 }
+@media screen and (max-width:900px)
+{
+  .tagline{
+    font-size:5.7vw;
+  }
+  .tagline1{
+    font-size:4vw;
+  }
+  .row-project{
+    display:flex;
+    flex-flow: column;
+    object-fit: cover;
+  }
+  .swiper{order:1;}
+  .colss{order:2;}
+  .swiper-slide img{
+    padding-right:200px;  }
+    .imag{
+      position: relative;
+      float: left;
+      width: 20%;
+      padding: 5px;
+      padding-top:50vw;
+    }
+    .imagc{
+      position: relative;
+      float: left;
+      width: 60%;
+      padding: 5px;
+    }
+    .para{
+      position:relative;
+      padding-top:80vw;
+    }
+    .para p{
+      font-size:15px;
+    }
+    .navbar-brand strong{
+      font-size:17px;
+    }
+    .swiper .myswiper{
+      width:10px;
+    }
 
+
+}
 

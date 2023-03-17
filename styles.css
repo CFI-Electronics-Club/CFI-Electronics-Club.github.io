@@ -1,5 +1,5 @@
-/* .container {
-  background-color: antiquewhite !important;
+.container-projects {
+  background-color: blue;
 }
 nav {
   background-color: antiquewhite !important;
@@ -15,6 +15,7 @@ nav {
   font-family: 'Montserrat', sans-serif;
 
 }
+
 .navbar-item img {
   max-height: 3.75rem !important;
 }

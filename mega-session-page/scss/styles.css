@@ -1,0 +1,111 @@
+body {
+    background-image: url('/images/10bd4.jpg');
+    background-attachment: fixed;
+}
+
+.imag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 767px){
+    .imag{
+        display: none;
+    }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 600px;
+  }
+
+.imagc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes flash {
+    0% { background-color: darkcyan; }
+    20% { background-color: white; }
+    40% { background-color: darkcyan; }
+  }
+
+  @keyframes flash2 {
+    0% { background-color: rgb(64, 64, 196); }
+    20% { background-color: white; }
+    40% { background-color: rgb(64, 64, 196); }
+  }
+
+/* .register:hover{
+    animation:none;
+    background-color: #64ca75;
+} */
+
+/* width */
+#specs::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+
+
+/* Handle */
+#specs::-webkit-scrollbar-thumb {
+    background: #D089FF;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#specs::-webkit-scrollbar-thumb:hover {
+    background: rgb(87, 12, 90);
+}
+
+/* width */
+#scroller::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+
+
+/* Handle */
+#scroller::-webkit-scrollbar-thumb {
+    background: #64ca75;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+#scroller::-webkit-scrollbar-thumb:hover {
+    background: rgb(28, 88, 38);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagc img{
+    width: 60%
+}
+.imag img{
+    display:flex;
+    justify-content: center;
+}
+
+
+#boar img{
+    transition: transform 10s;
+    width:50px;
+    height:50px;
+    margin:0 auto;
+    background-color: rgb(173, 173, 237);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#boar:hover{
+    transform:scale(1.2);
+}

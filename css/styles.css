@@ -296,6 +296,12 @@ border-color:white;}
   .div-img{
 
   }
+
+  .techspecs{
+    display: flex;
+    justify-content: center;
+  }
+  
 #boar img{
     transition: transform 10s;
     width:50px;

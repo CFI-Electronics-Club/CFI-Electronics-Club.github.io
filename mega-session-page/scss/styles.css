@@ -15,13 +15,25 @@ body {
     }
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    height: 600px;
-  }
+@media only screen and (max-width: 767px){
+    .center{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        height:500px;
+    }
+}
 
 .imagc {
     display: flex;
@@ -46,6 +58,23 @@ body {
     background-color: #64ca75;
 } */
 
+.specs1 {
+    display:flex;
+    justify-content: center;
+    overflow-x: clip;
+    padding-left:160px;
+    padding-right:160px;
+    height: 400px; 
+    overflow-y: scroll; 
+    padding-top: 2em;
+}
+
+.specs2 {
+    display:flex;
+    justify-content: center;
+    
+}
+
 /* width */
 #specs::-webkit-scrollbar {
     width: 15px;
@@ -59,7 +88,7 @@ body {
     border-radius: 10px;
 }
 
-/* Handle on hover */
+/* Handle on hover *
 #specs::-webkit-scrollbar-thumb:hover {
     background: rgb(87, 12, 90);
 }
@@ -69,6 +98,25 @@ body {
     width: 15px;
   }
   
+  @media only screen and (max-width: 767px){
+    #scroller {
+        width:80vw;
+        height:30vh;
+        overflow-x: scroll;
+
+    }
+    .esp32web{
+        width:200vw;
+        height:auto;
+    }
+}
+
+@media only screen and (min-width: 767px){
+    .esp32web{
+        width: 100%;
+        height: auto;
+    }
+}
 
 
 /* Handle */

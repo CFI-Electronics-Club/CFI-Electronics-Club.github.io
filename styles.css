@@ -35,6 +35,7 @@ box-shadow:  12px 12px 12px #101317,
   margin: auto;
   display: grid;
   margin-top: 45px;
+  width:100%
 }
 #kit-content {
 margin: auto;

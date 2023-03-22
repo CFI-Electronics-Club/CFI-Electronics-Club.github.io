@@ -2,3 +2,15 @@ body {
     background-image: url('/images/10bd4.jpg');
     background-attachment: fixed;
 }
+
+@media only screen and (max-width: 748px){
+    .showbig{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 748px){
+    .showsmall{
+        display:none;
+    }
+}

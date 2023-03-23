@@ -41,7 +41,7 @@ body {
     align-items: center;
 }
 
-@keyframes flash {
+/* @keyframes flash {
     0% { background-color: darkcyan; }
     20% { background-color: white; }
     40% { background-color: darkcyan; }
@@ -51,7 +51,7 @@ body {
     0% { background-color: rgb(64, 64, 196); }
     20% { background-color: white; }
     40% { background-color: rgb(64, 64, 196); }
-  }
+  } */
 
 /* .register:hover{
     animation:none;

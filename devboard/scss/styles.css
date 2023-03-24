@@ -7,10 +7,12 @@ body {
     .showbig{
         display:none;
     }
+    
 }
 
 @media only screen and (min-width: 748px){
     .showsmall{
         display:none;
     }
+    
 }

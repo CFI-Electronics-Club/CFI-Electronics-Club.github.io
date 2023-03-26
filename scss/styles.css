@@ -25,19 +25,19 @@
   }
 
   body {
-      background-image: url('/images/dev_boards/board.jpg');
+      background-image: url('https://cfi.iitm.ac.in/elec-club/images/dev_boards/board.jpg');
       background-attachment: fixed;
       background-size: cover;
   }
 
   .home-initiatives {
-      background-image: url('/images/backgrounds/bg-blue-texture.jpeg');
+      background-image: url('https://cfi.iitm.ac.in/elec-club/images/backgrounds/bg-blue-texture.jpeg');
       background-size:cover
       
   }
   @media only screen and (max-width: 768px) {
     body {
-      background-image: url('/images/board2.jpg');
+      background-image: url('https://cfi.iitm.ac.in/elec-club/images/board2.jpg');
       background-attachment: fixed;
       background-size: contain;
   }
@@ -70,13 +70,13 @@
    
  
    .home-initiatives {
-       background-image: url('/images/backgrounds/bg-blue-texture.jpeg');
+       background-image: url('https://cfi.iitm.ac.in/elec-club/images/backgrounds/bg-blue-texture.jpeg');
        background-size:cover
        
    }
    @media only screen and (max-width: 768px) {
      body {
-       background-image: url('/images/board2.jpg');
+       background-image: url('https://cfi.iitm.ac.in/elec-club/images/board2.jpg');
        background-attachment: fixed;
        background-size: contain;
    }
@@ -84,7 +84,7 @@
 
    @media only screen and (min-width: 768px) {
     body {
-      background-image: url('/images/dev_boards/board.jpg');
+      background-image: url('https://cfi.iitm.ac.in/elec-club/images/dev_boards/board.jpg');
       background-attachment: fixed;
       background-size: cover;
   }
